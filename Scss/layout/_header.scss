@@ -1,0 +1,108 @@
+@import "../foundation/_mixin.scss";
+
+.l-header{
+    width: 100%;
+    height: 200px;
+    background-color: #FFF7EF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__left{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        h1{
+            margin: 0 0 0 50px;
+        }
+        a{
+            color: #707070;
+            font-size: 3.0rem;
+        }
+        @include tab{
+            width: 100%;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+        }
+        &__menu{
+            &__botton{
+                font-size: 1.5rem;
+                margin: 10px -75px 160px ; 
+                cursor: pointer;
+                display: none;
+                z-index: 999;
+                color: #707070;
+                font-weight: bold;
+                @include tab{
+                    display: flex;
+                }
+                @include sp{
+                   left:25px;
+                }    
+            }
+        }
+    }
+    &__form{
+        margin: 20px 0 0 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        right: 10px;
+        &__box{
+           padding: 0 0 0 25px;
+           width: 300px;
+           height: 2rem;
+           border-radius: 0.6rem; 
+           border: solid 1px #707070;
+           font-size: 1.6rem;
+           font-weight: 500;
+        }
+        &__botton{
+            margin: 0 0 0 10px;
+            width: 5rem;
+            height: 2rem;
+            background-color: #F2EDE9;
+            border-radius: 0.6rem;
+            border: solid 1px #707070;
+            color: #707070;
+            cursor: pointer;
+        }
+    }
+    &__right{
+        width: 20%;
+        height: 200px;
+        background-color: #F2EDE9;
+        @include tab{
+            position: fixed;
+            left: 100%;
+        }
+        &__is-open{
+            z-index: 10; 
+            left: 70%; 
+            width: 30%; 
+        }
+
+    }
+}
+
+.fa-search{
+    top: 8px;
+    margin-right: 360px;
+    position: absolute;
+    z-index: 999;
+    @include tab{
+        margin-right: 350px;
+    }
+}
+
+.line{
+    &__side{
+      border-top:4px solid white;
+      width: 90px;
+      margin-left: 20px;
+    }&__border{
+      border-top:2px solid white;
+      width: 20px;
+      transform:rotate(90deg); 
+    }
+}

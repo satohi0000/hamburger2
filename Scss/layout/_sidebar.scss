@@ -1,0 +1,99 @@
+@import "../foundation/_mixin";
+
+.l-sidebar{
+    @include tab{
+        position:fixed;
+        overflow: scroll;
+        z-index: 999;
+        top:0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(90deg,#7F7F7F 0%,#7F7F7F 50px,#F2EDE9 50px,#F2EDE9 100%);
+        transition: all 0.6s;
+        padding: 0 0 0 0px;
+        &.__is-open{
+            right: 0%;
+        }
+    }    
+    height: inherit;
+    &__batsu{
+        display: none;
+        &.__is-open{
+            display: block;
+            margin: 10px 0 0 auto;
+            text-align: right;
+            cursor: pointer;
+            display: block;
+            width: 50px;/*枠の大きさ*/
+            height: 50px;/*枠の大きさ*/
+            background: #F2EDE9;
+            position: relative;
+            &::before{
+                content: "";
+                display: block;
+                width: 100%;/*バツ線の長さ*/
+                height: 5px;/*バツ線の太さ*/
+                background: #707070;
+                transform: rotate(45deg);
+                transform-origin:0% 50%;
+                position: absolute;
+                top: 0px;
+                left: 14%;
+            }
+            &::after{
+                content: "";
+                display: block;
+                width: 100%;/*バツ線の長さ*/
+                height: 5px;/*バツ線の太さ*/
+                background: #707070;
+                transform: rotate(-45deg);
+                transform-origin:0% 50%;
+                position: absolute;
+                top: 36px;
+                left: 14%;
+            }
+       }
+   }
+    >a{
+        display: block;
+        font-size: 34px;
+        font-weight: 600;
+        color: #707070;
+        margin: 100px 25px;
+        @include tab{
+            margin: 100px 50px;
+        }
+
+    }
+    ul{
+        li{
+            padding-bottom: 15px;
+            font-size: 24px;
+            margin-left: 25px;
+            @include tab{
+                margin-left:50px;
+            }
+            >a{
+                color: #707070;
+            }
+            ul{
+                padding-top: 45px;
+                padding-left: 10px;
+                li{
+                    font-size: 20px;
+                    padding-bottom: 30px;
+                    a{
+                        color: #707070;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.title{
+    font-size: 3rem;
+    color:white;
+}

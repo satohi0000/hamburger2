@@ -1,0 +1,23 @@
+.l-footer{
+    background-color:#957F6A;
+    height: 150px;
+    &__center{
+        padding-top: 20px;
+        display: flex;
+        color: white;
+        justify-content: center;
+        font-size: 1.2rem;
+        a{
+            color: white;
+        }
+        li{
+            padding-top: 5px;
+        }
+    }
+    &__copyright{
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+        
+    }
+}

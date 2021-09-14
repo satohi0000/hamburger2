@@ -1,0 +1,13 @@
+.l-archive{
+    &__top{
+        display: flex;
+        position: relative;
+        &__img{
+            height: 500px;
+            width: auto;   
+            background-image:url("../hamburger/pictures/マスクグループ.png");
+            background-size: cover;
+            background-position: center;
+        } 
+    }
+}
