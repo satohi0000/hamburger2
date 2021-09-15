@@ -15,10 +15,8 @@
          <div class="l-header__left">
              <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
              <h1><?php bloginfo( 'name' ); ?></h1></a>
-             <form class="l-header__form"　action="#" method="GET">
-             <input class="l-header__form__box" type="search" placeholder="">
-             <i class="fas fa-search" aria hidden="true"></i>
-             <input class="l-header__form__botton" type="submit" value="検索"></form>
+             <p><?php bloginfo( 'description' ); ?></p>
+             <?php get_search_form(); ?>
             </div>
             <div class="l-header__left__menu">
                 <div class="l-header__left__menu__botton">Menu</div>
