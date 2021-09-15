@@ -1,5 +1,4 @@
 <?php get_header(); ?> 
-  
   <div class="l-contents">
     <article class="l-contents__left">
        <div class="l-main">
@@ -60,6 +59,6 @@
       <p>Copyright: RaiseTech</p>
     </div>
   </footer>
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/Hamburger.js"></script>
+
+
 </body>
