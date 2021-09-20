@@ -14,7 +14,7 @@
         wp_enqueue_style( 'font-awesome', '"//use.fontawesome.com/releases/v5.6.1/css/all.css"', array(), '5.6.1' );
         wp_enqueue_style( 'hamburger', get_template_directory_uri() . '/scss/hamburger.css', array(), '1.0.0' );
         wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.0.0' );
-        wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.6.0.js', "", "3.6.0", true );
-        wp_enqueue_script( 'script', get_template_directory_uri() . '/js/Hamburger.js', array(), '1.0.0', true );
+        wp_enqueue_script( 'toggle', get_template_directory_uri() . '/js/Hamburger.js', array('jquery'), '1.0.0', true);
+        
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );
