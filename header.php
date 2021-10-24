@@ -23,5 +23,4 @@
         </div>
         <div class="l-header__right"></div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.６.0/jquery.min.js"></script>
-        
     </header>

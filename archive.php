@@ -1,5 +1,4 @@
 <?php get_header(); ?> 
-
 <body> 
 <div class="l-contents">
   <article class="l-contents__left">

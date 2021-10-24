@@ -14,6 +14,8 @@ add_filter( 'pre_get_document_title', 'hamburger_title' ); //function hamburger_
     wp_enqueue_style( 'hamburger', get_template_directory_uri() . '/scss/hamburger.css', array(), '1.0.0' );
     wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.0.0' );
     wp_enqueue_script( 'toggle', get_template_directory_uri() . '/js/Hamburger.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.6.0.js', "", "3.5.1", true );
+        wp_enqueue_script( 'script', get_template_directory_uri() . '/js/scipt.js', array(), '1.0.0', true );
     function hamburger_widgets_init() {
         register_sidebar (
             array(
@@ -26,5 +28,5 @@ add_filter( 'pre_get_document_title', 'hamburger_title' ); //function hamburger_
                 'after_title'   => "</h2>\n",
                 )
             );
-            add_action( 'widgets_init', 'hamburger_widgets_init' );
         }
+        add_action( 'widgets_init', 'hamburger_widgets_init' );
