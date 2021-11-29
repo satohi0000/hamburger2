@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="<?php language_attributes(); ?>">
 <head>
-    <link rel="stylesheet" href="/Scss/hamburger.css">
+    <link rel = "stylesheet" href="css/hamburger.css"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -22,5 +22,5 @@
             <div class="l-header__left__menu__botton">Menu</div>
         </div>
         <div class="l-header__right"></div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.６.0/jquery.min.js"></script>
+        
     </header>

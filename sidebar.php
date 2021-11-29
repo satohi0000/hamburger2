@@ -38,3 +38,5 @@
        </ul>
     </div>
 </aside>
+
+<?php dynamic_sidebar( 'sidebar' ); ?>
