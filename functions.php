@@ -9,7 +9,7 @@ function hamburger_title( $title ) {
     }
     return $title;
 }
-add_filter( 'pre_get_document_title', 'hamburger_title' ); 
+add_filter( 'pre_get_document_title', 'hamburger_title' ); //
 
 function hamburger_script(){ 
     wp_enqueue_style( 'font-awesome', '"//use.fontawesome.com/releases/v5.6.1/css/all.css"', array(), '5.6.1' );
@@ -18,6 +18,8 @@ function hamburger_script(){
     wp_enqueue_script( 'toggle', get_template_directory_uri() . '/js/Hamburger.js', array('jquery'), '1.0.0', true);
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.6.0.js', "", "3.5.1", true );
 }
+add_action( 'wp_enqueue_scripts', 'hamburger_script' );
+
 
 function hamburger_widgets_init() {
     register_sidebar (
