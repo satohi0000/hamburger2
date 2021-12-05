@@ -1041,4 +1041,8 @@ input, select {
     font-size: 0.8rem;
   }
 }
+
+.c-category-title {
+  display: none;
+}
 /*# sourceMappingURL=hamburger.css.map */
