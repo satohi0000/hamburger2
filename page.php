@@ -1,9 +1,9 @@
 <?php get_header(); ?> 
-  <div class="l-contents">
-    <article class="l-contents__left">
-      <div class="l-contents__left__page__top">
-        <div class="l-contents__left__page__top__img"></div>
-        <div class="l-contents__left__page__top__word">
+  <div class="p-article">
+    <article class="p-article__left">
+      <div class="p-article__left__page__top">
+        <div class="p-article__left__page__top__img"></div>
+        <div class="p-article__left__page__top__word">
           <h1><?php the_title(); ?></h1>
         </div>
       </div>
