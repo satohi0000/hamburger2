@@ -96,23 +96,10 @@
       <p>boldboldboldboldboldboldbold</p>
     </div>
     </table> 
-
-
   </article>
   <?php get_sidebar(); ?> 
 </div>
-<footer class="l-footer">
-  <div class="l-footer__center">
-    <li><a href="#">ショップ情報</a></li>
-    <hr class="line__border"></p>
-    <li><a href="#">ヒストリー</li></a>
-   </div>
-   <div class="l-footer__copyright">
-     <p>Copyright: RaiseTech</p>
-   </div>
- </footer>
- <script src="js/jquery-3.6.0.js"></script>
- <script src="js/Hamburger.js"></script>
+ <?php get_footer(); ?>
 </body>
   
 
