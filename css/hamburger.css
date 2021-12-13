@@ -225,134 +225,6 @@ input, select {
   text-align: inherit;
 }
 
-.p-article {
-  padding: 30px 90px 180px;
-  font-weight: normal;
-  color: #3C2A10;
-}
-
-@media (max-width: 1200px) {
-  .p-article {
-    padding: 70px 60px;
-  }
-}
-
-@media (max-width: 599px) {
-  .p-article {
-    padding: 35px 22px;
-  }
-}
-
-.p-article h2 {
-  padding: 33px 0;
-  font-size: 36px;
-}
-
-.p-article h3 {
-  padding: 33px 0;
-  font-size: 28px;
-}
-
-.p-article h4, .p-article h5, .p-article h6 {
-  padding: 33px 0;
-  font-size: 20px;
-}
-
-.p-article p {
-  padding: 33px 0;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.p-article blockquote {
-  padding: 33px 0;
-  background-color: #F5F5F5;
-  padding-left: 50px;
-  padding-right: 50px;
-  line-height: 1.6;
-}
-
-@media (max-width: 599px) {
-  .p-article blockquote {
-    padding-top: 30px;
-  }
-}
-
-.p-article blockquote > p {
-  padding: 0 0 33px;
-}
-
-.p-article ol {
-  padding: 33px 0;
-  width: 100%;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-@media (max-width: 599px) {
-  .p-article ol {
-    padding: 0 20px 30px;
-  }
-}
-
-.p-article ol > li {
-  list-style: decimal;
-}
-
-.p-article ol > li > ol {
-  padding: 30px 20px;
-}
-
-.p-article ul {
-  padding: 33px 0;
-  width: 100%;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-@media (max-width: 599px) {
-  .p-article ul {
-    padding: 0 0 30px;
-  }
-}
-
-.p-article ul > li > ul {
-  padding: 30px 20px;
-}
-
-.p-article pre {
-  padding: 33px 0;
-  width: 100%;
-  background-color: #F5F5F5;
-  padding: 50px;
-}
-
-.p-article pre code {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.p-article figure {
-  padding: 33px 0;
-}
-
-.p-article figure table {
-  padding: 60px 0;
-  font-size: 16px;
-  width: 100%;
-}
-
-.p-article figure table tr {
-  padding: 30px;
-}
-
-.p-article figure table tr th, .p-article figure table tr td {
-  padding: 30px;
-  font-weight: 500;
-  border: solid 1px;
-  text-align: inherit;
-}
-
 .l-contents {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1281,6 +1153,134 @@ input, select {
   .p-pagenation ul li {
     font-size: 0.8rem;
   }
+}
+
+.p-article {
+  padding: 30px 90px 180px;
+  font-weight: normal;
+  color: #3C2A10;
+}
+
+@media (max-width: 1200px) {
+  .p-article {
+    padding: 70px 60px;
+  }
+}
+
+@media (max-width: 599px) {
+  .p-article {
+    padding: 35px 22px;
+  }
+}
+
+.p-article h2 {
+  padding: 33px 0;
+  font-size: 36px;
+}
+
+.p-article h3 {
+  padding: 33px 0;
+  font-size: 28px;
+}
+
+.p-article h4, .p-article h5, .p-article h6 {
+  padding: 33px 0;
+  font-size: 20px;
+}
+
+.p-article p {
+  padding: 33px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.p-article blockquote {
+  padding: 33px 0;
+  background-color: #F5F5F5;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 1.6;
+}
+
+@media (max-width: 599px) {
+  .p-article blockquote {
+    padding-top: 30px;
+  }
+}
+
+.p-article blockquote > p {
+  padding: 0 0 33px;
+}
+
+.p-article ol {
+  padding: 33px 0;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 599px) {
+  .p-article ol {
+    padding: 0 20px 30px;
+  }
+}
+
+.p-article ol > li {
+  list-style: decimal;
+}
+
+.p-article ol > li > ol {
+  padding: 30px 20px;
+}
+
+.p-article ul {
+  padding: 33px 0;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 599px) {
+  .p-article ul {
+    padding: 0 0 30px;
+  }
+}
+
+.p-article ul > li > ul {
+  padding: 30px 20px;
+}
+
+.p-article pre {
+  padding: 33px 0;
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 50px;
+}
+
+.p-article pre code {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.p-article figure {
+  padding: 33px 0;
+}
+
+.p-article figure table {
+  padding: 60px 0;
+  font-size: 16px;
+  width: 100%;
+}
+
+.p-article figure table tr {
+  padding: 30px;
+}
+
+.p-article figure table tr th, .p-article figure table tr td {
+  padding: 30px;
+  font-weight: 500;
+  border: solid 1px;
+  text-align: inherit;
 }
 
 .c-category-title {
