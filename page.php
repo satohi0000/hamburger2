@@ -18,8 +18,8 @@
         <p>表示する記事がありません</p>
       <?php endif; ?> 
     </article>
-    <?php get_sidebar(); ?> 
   </div>
+  <?php get_sidebar(); ?> 
   <?php get_footer(); ?>
 </body>  
   
