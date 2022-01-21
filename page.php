@@ -2,11 +2,11 @@
   <div class="p-article">
     <article class="p-article__left">
       <div class="p-article__left__page__top">
-        <div class="p-article__left__page__top__img"></div>
         <div class="p-article__left__page__top__word">
           <h1><?php the_title(); ?></h1>
         </div>
       </div>
+      <div class="p-article__left__page__top__img"></div>
       <?php if(have_posts()): 
       while(have_posts()):
       the_post(); ?>
@@ -19,9 +19,5 @@
       <?php endif; ?>   
   </article>
   <?php get_sidebar(); ?> 
-  </div>
-  
+</div>
   <?php get_footer(); ?>
-</body>  
-  
-

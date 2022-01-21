@@ -11,6 +11,32 @@
     }
     &__left{
         width: 80%;
+        &__page{
+            &__top{
+                &__img{
+                    background-image: url("../pictures/cooked-foods-750073.png"); 
+                    object-fit: cover;
+                    object-position: center;  
+                    height: 400px; 
+                }
+                &__word{
+                  font-size: 42px;  
+                }
+            }
+        }
+        &__single{
+            &__top{
+                &__img{
+                    background-image: url("../../pictures/cooked-foods-750073.png");
+                    object-fit: cover;
+                    object-position: center;  
+                    height: 100px;
+                }
+                &__word{
+                    font-size: 42px;
+                }
+            }
+        }
     }
 
 //見出しや文字
@@ -20,12 +46,19 @@
     }
     h3{
         padding: 33px 0;
-        
         font-size: 28px;
     }
-    h4,h5,h6{
+    h4{
         padding: 33px 0;
         font-size: 20px;
+    }
+    h5{
+        padding: 33px 0;
+        font-size: 12px;
+    }
+    h6{
+        padding: 33px 0;
+        font-size: 4px;
     }
     p{
         padding: 33px 0;

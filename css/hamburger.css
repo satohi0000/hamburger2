@@ -1067,6 +1067,32 @@ input, select {
   width: 80%;
 }
 
+.p-article__left__page__top__img {
+  background-image: url("../pictures/cooked-foods-750073.png");
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 400px;
+}
+
+.p-article__left__page__top__word {
+  font-size: 42px;
+}
+
+.p-article__left__single__top__img {
+  background-image: url("../../pictures/cooked-foods-750073.png");
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100px;
+}
+
+.p-article__left__single__top__word {
+  font-size: 42px;
+}
+
 .p-article h2 {
   padding: 33px 0;
   font-size: 36px;
@@ -1077,9 +1103,19 @@ input, select {
   font-size: 28px;
 }
 
-.p-article h4, .p-article h5, .p-article h6 {
+.p-article h4 {
   padding: 33px 0;
   font-size: 20px;
+}
+
+.p-article h5 {
+  padding: 33px 0;
+  font-size: 12px;
+}
+
+.p-article h6 {
+  padding: 33px 0;
+  font-size: 4px;
 }
 
 .p-article p {
