@@ -1,5 +1,6 @@
 .p-article{
-    width: 80%;
+    width: 100%;
+    display: flex;
     font-weight: normal;
     color: #3C2A10;
     @include tab{
@@ -8,6 +9,10 @@
     @include sp{
         padding: 35px 22px;
     }
+    &__left{
+        width: 80%;
+    }
+
 //見出しや文字
     h2{
         padding: 33px 0;
