@@ -107,7 +107,7 @@ input, select {
 .l-archive__top__img {
   height: 500px;
   width: auto;
-  background-image: url("../hamburger/pictures/hamburger_set.png");
+  background-image: url("../pictures/hamburger_set.png");
   background-size: cover;
   background-position: center;
 }
@@ -714,7 +714,7 @@ input, select {
 
 .l-header__left__menu__botton {
   font-size: 1.5rem;
-  margin: 10px -75px 160px;
+  margin: 10px -80px 160px;
   cursor: pointer;
   display: none;
   z-index: 999;
@@ -1051,46 +1051,69 @@ input, select {
   color: #3C2A10;
 }
 
-@media (max-width: 1200px) {
-  .p-article {
-    padding: 70px 60px;
-  }
-}
-
-@media (max-width: 599px) {
-  .p-article {
-    padding: 35px 22px;
-  }
-}
-
 .p-article__left {
-  width: 80%;
+  margin: 15px;
+  width: 78%;
 }
 
-.p-article__left__page__top__img {
-  background-image: url("../pictures/cooked-foods-750073.png");
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  height: 400px;
+@media (max-width: 1200px) {
+  .p-article__left {
+    width: 100%;
+  }
 }
 
-.p-article__left__page__top__word {
-  font-size: 42px;
+.p-article__left__page__top {
+  aspect-ratio: 2/1;
+  background-image: url("../pictures/page_top.png");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.p-article__left__single__top__img {
-  background-image: url("../../pictures/cooked-foods-750073.png");
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  height: 100px;
+.p-article__left__page__top > a {
+  color: white;
+  font-weight: bold;
+  line-height: auto;
+  font-size: 4rem;
 }
 
-.p-article__left__single__top__word {
-  font-size: 42px;
+.p-article__left__single__top {
+  aspect-ratio: 2/1;
+  background-image: url("../pictures/page_top.png");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-article__left__single__top > a {
+  color: white;
+  font-weight: bold;
+  line-height: auto;
+  font-size: 4rem;
 }
 
 .p-article h2 {
@@ -1126,6 +1149,7 @@ input, select {
 
 .p-article blockquote {
   padding: 33px 0;
+  margin: 10px;
   background-color: #F5F5F5;
   padding-left: 50px;
   padding-right: 50px;
