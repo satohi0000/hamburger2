@@ -97,7 +97,7 @@ input, select {
 .l-archive__top__img {
   height: 500px;
   width: auto;
-  background-image: url("../pictures/マスクグループ.png");
+  background-image: url("../hamburger/pictures/マスクグループ.png");
   background-size: cover;
   background-position: center;
 }
@@ -1031,4 +1031,4 @@ input, select {
     font-size: 0.8rem;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=hamburger.css.map */
