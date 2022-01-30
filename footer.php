@@ -7,7 +7,9 @@
         ?>    
   </div>
   <div class="l-footer__copyright">
-    <p>Copyright: RaiseTech</p>
+  <p> 
+        <small>Copyright : <?php bloginfo( 'name' ); ?> 2022</small>
+    </p>
   </div>
 </footer>
 <?php wp_footer(); ?>

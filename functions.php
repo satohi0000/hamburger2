@@ -1,6 +1,8 @@
 <?php
 add_theme_support( 'menus' );
 add_theme_support( 'title-tag' );
+add_theme_support( 'post-thumbnails' );
+
 function hamburger_title( $title ) {
     if ( is_front_page() && is_home() ) { //表示されたページがフロントページかつメインページなら
         $title = get_bloginfo( 'name', 'display' ); //タイトルはブログのサイト名にしてください
@@ -46,6 +48,29 @@ function post_has_archive($args, $post_type)
     return $args;
 }
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+
+register_sidebar(
+    array(
+      'name'          => 'タグウィジェット',
+      'id'            => 'tag_widget',
+      'description'   => 'タグ用ウィジェットです',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h2><i class="fa fa-tags" aria-hidden="true"></i>',
+      'after_title'   => "</h2>\n",
+    )
+  );
+  register_sidebar(
+    array(
+      'name'          => 'アーカイブウィジェット',
+      'id'            => 'archive_widget',
+      'description'   => 'アーカイブ用ウィジェットです',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h2><i class="fa fa-archive" aria-hidden="true"></i>',
+      'after_title'   => "</h2>\n",
+    )
+  );
 
 //カスタムメニュー
 function custom_theme_setup() {
