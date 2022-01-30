@@ -516,22 +516,43 @@ input, select {
 
 .l-footer__center {
   padding-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-size: 1.2rem;
 }
 
 .l-footer__center a {
   color: white;
+  font-size: 20px;
+  padding: 15px 15px 15px 0px;
+}
+
+.l-footer__center ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .l-footer__center li {
-  padding-top: 5px;
+  position: relative;
+  padding: 5px;
+  margin: 5px;
+}
+
+.l-footer__center li::before {
+  position: absolute;
+  left: 3;
+  content: "";
+  background-color: #fff;
+  width: 1px;
+  height: 20px;
+  margin: 6px -20px 4px -20px;
+}
+
+.l-footer__center li:first-of-type::before {
+  display: none;
 }
 
 .l-footer__copyright {

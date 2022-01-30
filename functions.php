@@ -46,3 +46,15 @@ function post_has_archive($args, $post_type)
     return $args;
 }
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+
+//カスタムメニュー
+function custom_theme_setup() {
+    //メニューの登録
+    register_nav_menus(array(
+        'global-menu' => 'アーカイブ' ,
+        'side-menu' => 'サイドメニュー',
+        'footer-menu' => 'フッターメニュー',
+        
+    ));
+}
+add_action( 'after_setup_theme', 'custom_theme_setup' );
