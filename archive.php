@@ -7,51 +7,29 @@
       <div class="l-contents__left__archive__top__word">
         <h1>Menu:</h1>
         <p><?php single_cat_title(); ?></p> 
-        <p>チーズバーガー</p>
       </div>
     </div>
-    <div class="l-contents__left__archive__top__sentence">
-      <div class="l-contents__left__archive__top__title">
-        <h2>小見出しが入ります</h2>
-        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+    <?php
+    if (have_posts()) :
+    while (have_posts()) :
+    the_post(); ?>
+    <div class="p-menu-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+     <?php the_post_thumbnail(); ?> 
+      <div class="p-menu-card__intro">
+        <h3><?php the_title(); ?></h3>
+        <?php the_excerpt(); ?> 
+        <a href="<?php the_permalink(); ?>">詳しく見る</a> 
       </div>
     </div>
-    <div class="l-contents__left__archive__bottom">
-      <div class="l-contents__left__archive__bottom__menu">
-        <div class="l-contents__left__archive__bottom__menu__img"></div>
-        <div class="l-contents__left__archive__bottom__menu__box">
-          <h2>チーズバーガー</h2>
-          <h3>小見出しが入ります</h3>
-          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-          <div class="l-contents__left__archive__bottom__menu__box__switch">
-            <h5>詳しく見る</h5>
-          </div>
-        </div>
-      </div>
-      <div class="l-contents__left__archive__bottom__menu">
-        <div class="l-contents__left__archive__bottom__menu__img"></div>
-        <div class="l-contents__left__archive__bottom__menu__box">
-          <h2>ダブルチーズバーガー</h2>
-          <h3>小見出しが入ります</h3>
-          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-          <div class="l-contents__left__archive__bottom__menu__box__switch">
-            <h5>詳しく見る</h5>
-          </div>
-        </div>
-      </div>
-      <div class="l-contents__left__archive__bottom__menu">
-        <div class="l-contents__left__archive__bottom__menu__img"></div>
-        <div class="l-contents__left__archive__bottom__menu__box">
-          <h2>スペシャルチーズバーガー</h2>
-          <h3>小見出しが入ります</h3>
-          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-          <div class="l-contents__left__archive__bottom__menu__box__switch">
-            <h5>詳しく見る</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="p-pagenation">
+    <?php endwhile;
+    else :?>
+    <p>表示する記事がありません</p>
+    <?php endif; ?>
+  </article>
+  <?php get_sidebar(); ?> 
+</div>
+  
+  <div class="p-pagenation">
       <ul>
           <li>page 1/10</li>
           <li><a href="archive.html">1</a></li>
@@ -64,20 +42,7 @@
           <li><a href="archive.html">8</a></li>
           <li><a href="archive.html">9</a></li>
       </ul>
-  </div>
-  </article>
-  <?php get_sidebar(); ?> 
-</div>
-<footer class="l-footer">
- <div class="l-footer__center">
-   <li><a href="#">ショップ情報</a></li>
-   <hr class="line__border"></p>
-   <li><a href="#">ヒストリー</li></a>
-  </div>
-  <div class="l-footer__copyright">
-    <p>Copyright: RaiseTech</p>
-  </div>
-</footer>
+    </div>
+    <?php get_footer(); ?>
 <script src="js/jquery-3.6.0.js"></script>
 <script src="js/Hamburger.js"></script>
-</body>
