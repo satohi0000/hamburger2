@@ -1,14 +1,15 @@
 .p-menu-card{
     height: auto;
-    width: 100%; 
+    width: 100%;
+    background-color: #3C2B1C; 
+    margin-top: 100px;
     img{
         position: absolute;
         background-image:url("../pictures/マスクグループ.png");
         background-size: cover;
         background-position: center;
-        width: 100%;
         z-index: 2;
-        width: 43%; 
+        width: 2%; 
         height: auto; 
     } 
     &__intro{

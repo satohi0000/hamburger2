@@ -16,7 +16,10 @@
     <div class="p-menu-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
      <?php the_post_thumbnail(); ?> 
       <div class="p-menu-card__intro">
-        <h3><?php the_title(); ?></h3>
+        <div class="p-menu-card__intro__title">
+          <h3><?php the_title(); ?></h3>
+        </div>
+        <div class="p-menu-card__intro__except">
         <?php the_excerpt(); ?> 
         <a href="<?php the_permalink(); ?>">詳しく見る</a> 
       </div>
