@@ -1,26 +1,54 @@
 .p-menu-card{
-    height: auto;
-    width: 100%;
-    background-color: #3C2B1C; 
-    margin-top: 100px;
-    img{
-        position: absolute;
-        background-image:url("../pictures/マスクグループ.png");
+    display: flex;
+    flex-direction:column;
+    background: #3C2B1C;
+        @include tab{
+            margin: 0px;
+        }
+    &__eyecatch{
         background-size: cover;
         background-position: center;
-        z-index: 2;
-        width: 2%; 
-        height: auto; 
+        height: auto;
+        width: 50%;
+        z-index: 1;
     } 
     &__intro{
-        height: auto;
-        p{
-            padding-top: 35px; 
-            padding-bottom: 50px; 
+        display: block;
+        margin: 20px 0 0 0;
+        position: relative;
+        
+        @include tab{
+            
         }
-        h3{
-            font-size: 1.2rem;
-            margin: 0 0 20px 40px;
+        &__permalink{
+            padding: 60px 0 0 0;
         }
+    &__title{
+        position: absolute;
+        color: white;
+        h2{
+            padding: 20px 0;
+            font-size: 1.5rem;
+            }      
+        }
+    &__except{
+        position: absolute;
+        padding: 30px 0px 0px 0px;
+        color: white;
+
+        }
+    &__permalink{
+        
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 4px;
+        margin: 30px auto;
+        border-radius: 30px;
+        line-height: 50px;
+        width: 50%;
+        text-align: center;
+        
+    }
     }
 }

@@ -2,6 +2,7 @@
 add_theme_support( 'menus' );
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 300, 300 );
 
 function hamburger_title( $title ) {
     if ( is_front_page() && is_home() ) { //表示されたページがフロントページかつメインページなら

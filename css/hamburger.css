@@ -1259,34 +1259,66 @@ input, select {
 }
 
 .p-menu-card {
-  height: auto;
-  width: 100%;
-  background-color: #3C2B1C;
-  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #3C2B1C;
 }
 
-.p-menu-card img {
-  position: absolute;
-  background-image: url("../pictures/マスクグループ.png");
+@media (max-width: 1200px) {
+  .p-menu-card {
+    margin: 0px;
+  }
+}
+
+.p-menu-card__eyecatch {
   background-size: cover;
   background-position: center;
-  z-index: 2;
-  width: 2%;
   height: auto;
+  width: 50%;
+  z-index: 1;
 }
 
 .p-menu-card__intro {
-  height: auto;
+  display: block;
+  margin: 20px 0 0 0;
+  position: relative;
 }
 
-.p-menu-card__intro p {
-  padding-top: 35px;
-  padding-bottom: 50px;
+.p-menu-card__intro__permalink {
+  padding: 60px 0 0 0;
 }
 
-.p-menu-card__intro h3 {
+.p-menu-card__intro__title {
+  position: absolute;
+  color: white;
+}
+
+.p-menu-card__intro__title h2 {
+  padding: 20px 0;
+  font-size: 1.5rem;
+}
+
+.p-menu-card__intro__except {
+  position: absolute;
+  padding: 30px 0px 0px 0px;
+  color: white;
+}
+
+.p-menu-card__intro__permalink {
+  color: black;
   font-size: 1.2rem;
-  margin: 0 0 20px 40px;
+  font-weight: 700;
+  padding: 4px;
+  margin: 30px auto;
+  border-radius: 30px;
+  line-height: 50px;
+  width: 50%;
+  text-align: center;
 }
 
 .c-category-title {

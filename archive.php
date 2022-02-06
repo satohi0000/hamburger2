@@ -11,33 +11,36 @@
     </div>
     <?php
     if (have_posts()) :
-    while (have_posts()) :
-    the_post(); ?>
-    <div class="p-menu-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-     <?php the_post_thumbnail(); ?> 
+      while (have_posts()) :
+      the_post(); ?>
+      <div class="p-menu-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <div class="p-menu-card__eyecatch">
+        <?php the_post_thumbnail(); ?>
+      </div>
       <div class="p-menu-card__intro">
         <div class="p-menu-card__intro__title">
           <h3><?php the_title(); ?></h3>
         </div>
         <div class="p-menu-card__intro__except">
-        <?php the_excerpt(); ?> 
-        <a href="<?php the_permalink(); ?>">詳しく見る</a> 
+          <?php the_excerpt(); ?>
+        </div> 
+        <div class="p-menu-card__intro__permalink">
+          <a href="<?php the_permalink(); ?>">詳しく見る</a>
+        </div>
       </div>
-    </div>
-    <?php endwhile;
-    else :?>
-    <p>表示する記事がありません</p>
-    <?php endif; ?>
-  </article>
-  <?php get_sidebar(); ?> 
-</div>
-  
-  <div class="p-pagenation">
-      <ul>
-          <li>page 1/10</li>
-          <li><a href="archive.html">1</a></li>
-          <li><a href="archive.html">2</a></li>
-          <li><a href="archive.html">3</a></li>
+      <?php endwhile;
+      else :?>
+      <p>表示する記事がありません</p>
+      <?php endif; ?>
+    </article>
+    <?php get_sidebar(); ?> 
+  </div>
+<div class="p-pagenation">
+  <ul>
+    <li>page 1/10</li>
+    <li><a href="archive.html">1</a></li>
+    <li><a href="archive.html">2</a></li>
+    <li><a href="archive.html">3</a></li>
           <li><a href="archive.html">4</a></li>
           <li><a href="archive.html">5</a></li>
           <li><a href="archive.html">6</a></li>
