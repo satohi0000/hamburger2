@@ -15,17 +15,19 @@
     the_post(); ?>
       <div class="p-menu-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <div class="p-menu-card__intro">
-        <div class="p-menu-card__eyecatch">
-          <?php the_post_thumbnail(); ?>
-        </div>
-        <div class="p-menu-card__intro__title">
-          <h3><?php the_title(); ?></h3>
-        </div>
-        <div class="p-menu-card__intro__except">
-          <?php the_excerpt(); ?>
-        </div> 
-        <div class="p-menu-card__intro__permalink">
-          <a href="<?php the_permalink(); ?>">詳しく見る</a>
+       <p class="responsive-thumbnail">
+         <?php the_post_thumbnail('full'); ?>
+        </p>
+        <div class="p-menu-card__intro__right">
+          <div class="p-menu-card__intro__right__title">
+            <h3><?php the_title(); ?></h3>
+          </div>
+          <div class="p-menu-card__intro__right__except">
+            <?php the_excerpt(); ?>
+          </div> 
+         <div class="p-menu-card__intro__right__permalink">
+           <a href="<?php the_permalink(); ?>">詳しく見る</a>
+          </div>
         </div>
       </div>
     </div>
