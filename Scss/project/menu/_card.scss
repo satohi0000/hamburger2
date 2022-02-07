@@ -1,54 +1,52 @@
 .p-menu-card{
     display: flex;
     flex-direction:column;
+    margin:30px 0 0 0;
     background: #3C2B1C;
-        @include tab{
-            margin: 0px;
-        }
+    &__intro{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 0 0;
+        height: 300px;
+        z-index: 2;
+
     &__eyecatch{
+        position: absolute;
         background-size: cover;
         background-position: center;
         height: auto;
         width: 50%;
         z-index: 1;
-    } 
-    &__intro{
-        display: block;
-        margin: 20px 0 0 0;
-        position: relative;
-        
-        @include tab{
-            
-        }
-        &__permalink{
-            padding: 60px 0 0 0;
-        }
-    &__title{
-        position: absolute;
-        color: white;
-        h2{
-            padding: 20px 0;
-            font-size: 1.5rem;
-            }      
-        }
-    &__except{
-        position: absolute;
-        padding: 30px 0px 0px 0px;
-        color: white;
-
-        }
+        left: 0;
+    }
     &__permalink{
-        
+        position: absolute;
+        background-color: #fff;
         color: black;
         font-size: 1.2rem;
         font-weight: 700;
         padding: 4px;
-        margin: 30px auto;
         border-radius: 30px;
         line-height: 50px;
-        width: 50%;
         text-align: center;
-        
+        top: 60%;
+        right: 20%;
+        width: 30%;
+        }   
+    &__title{
+        position: absolute;
+        color: white;
+        h2{
+            padding: 0px 0;
+            font-size: 1.5rem;
+        }      
     }
+    &__except{
+        position: absolute;
+        color: white;
+        right: 0%;
+        width: 50%;
     }
+}
 }

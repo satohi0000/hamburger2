@@ -11,13 +11,13 @@
     </div>
     <?php
     if (have_posts()) :
-      while (have_posts()) :
-      the_post(); ?>
+    while (have_posts()) :
+    the_post(); ?>
       <div class="p-menu-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-      <div class="p-menu-card__eyecatch">
-        <?php the_post_thumbnail(); ?>
-      </div>
       <div class="p-menu-card__intro">
+        <div class="p-menu-card__eyecatch">
+          <?php the_post_thumbnail(); ?>
+        </div>
         <div class="p-menu-card__intro__title">
           <h3><?php the_title(); ?></h3>
         </div>
@@ -28,10 +28,11 @@
           <a href="<?php the_permalink(); ?>">詳しく見る</a>
         </div>
       </div>
-      <?php endwhile;
-      else :?>
+    </div>
+    <?php endwhile; 
+    else :?>
       <p>表示する記事がありません</p>
-      <?php endif; ?>
+    <?php endif; ?>
     </article>
     <?php get_sidebar(); ?> 
   </div>
