@@ -31,6 +31,7 @@
         }
     &__right{
         position: relative;
+        height: auto;
         width: 50%;
         right: auto;
         @include sp{
@@ -41,9 +42,7 @@
         right: 50%;
         color: white;
         font-size: 2rem;
-        @include tab{
-            font-size: 1.6rem;
-        }
+        
         @include sp{
             font-size: 1.4rem;
         }
@@ -51,10 +50,11 @@
     &__except{
         color: white;
         right: 0%;
-        @include tab{
-            font-size: 1.0rem;
-        }
         font-size: 1.2rem;
+        @include tab{
+            font-size: 1.4rem;
+        }
+        
     }
     &__permalink{
         background-color: white;

@@ -30,12 +30,12 @@
         }
         &__single{
             &__top{
-                aspect-ratio: 2/1;
-                background-image: url("../pictures/page_top.png");
+                >p{
+                    width: 100%;
+                }
                 background-size: cover;
                 background-position: center; 
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 >a{
@@ -43,6 +43,7 @@
                 font-weight: bold;
                 line-height: auto;
                 font-size: 4rem;
+                position: absolute;
                 }
             }
         }

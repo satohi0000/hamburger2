@@ -2,6 +2,9 @@
   <div class="p-article">
     <article class="p-article__left">
       <div class="p-article__left__single__top">
+        <p class="responsive-thumbnail">
+         <?php the_post_thumbnail('full'); ?>
+        </p>
         <a href="#">
           <?php the_title(); ?>
         </a>
@@ -15,8 +18,7 @@
       <?php endwhile;else: ?>
         <p>表示する記事がありません</p>
       <?php endif; ?>
-    </div>
-  </article>
-  <?php get_sidebar(); ?> 
-</div>
+    </article>
+  </div> 
+<?php get_sidebar(); ?> 
 <?php get_footer(); ?>
