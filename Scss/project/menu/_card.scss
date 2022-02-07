@@ -1,6 +1,8 @@
  
 .responsive-thumbnail{
     width: 50%;
+    display: flex;
+    align-items: center;
     @include sp{
         width: 100%;
     }
@@ -16,7 +18,7 @@
 
 .p-menu-card{
     display: flex;
-    margin:5px 0 0 0;
+    margin:15px 0 0 0;
     background: #3C2B1C;
     &__intro{
         position: relative;
@@ -50,9 +52,9 @@
         color: white;
         right: 0%;
         @include tab{
-            font-size: 1.2rem;
+            font-size: 1.0rem;
         }
-        font-size: 1.0rem;
+        font-size: 1.2rem;
     }
     &__permalink{
         background-color: white;
