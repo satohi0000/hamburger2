@@ -14,33 +14,6 @@
                 padding: 0 4px;
        
             }
-            &:first-of-type{
-                padding-top: 10px;
-                &::after{
-                    content: "<<";
-                    color: #3C2B1C;
-                    padding-left: 10px;
-                }
-                @include tab{
-                    padding-left: 4px;
-           
-                }
-            }
-            &:last-of-type{
-                position: relative;
-                &::after{
-                    position: absolute;
-                    top: 10px;
-                    right: -24px;
-                    content: ">>";
-                    color: #3C2B1C;
-                    @include tab{
-                        right: -14px;
-               
-                    }
-                }
-
-            }
             a{
                 display: block;
                 color: #3C2B1C;

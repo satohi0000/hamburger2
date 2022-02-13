@@ -84,3 +84,23 @@ function custom_theme_setup() {
     ));
 }
 add_action( 'after_setup_theme', 'custom_theme_setup' );
+
+function the_pagination() {
+    global $wp_query;
+    $big = 999999999;
+    if ( $wp_query->max_num_pages <= 1 )
+        return;
+    echo '<nav class="pagination">';
+    echo paginate_links( array(
+        'base'         => str_replace( $big, '%#%', esc_url( get_pagenum_link($big) ) ),
+        'format'       => '',
+        'current'      => max( 1, get_query_var('paged') ),
+        'total'        => $wp_query->max_num_pages,
+        'prev_text'    => '<<',
+        'next_text'    => '>>',
+        'type'         => 'list',
+        'end_size'     => 1,
+        'mid_size'     => 1
+    ) );
+    echo '</nav>';
+    }

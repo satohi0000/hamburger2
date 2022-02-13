@@ -36,22 +36,18 @@
       <p>表示する記事がありません</p>
     <?php endif; ?>
     </article>
-    <?php get_sidebar(); ?> 
+    <?php get_sidebar(); ?>
   </div>
+
+  
+
+
+
 <div class="p-pagenation">
-  <ul>
-    <li>page 1/10</li>
-    <li><a href="archive.html">1</a></li>
-    <li><a href="archive.html">2</a></li>
-    <li><a href="archive.html">3</a></li>
-          <li><a href="archive.html">4</a></li>
-          <li><a href="archive.html">5</a></li>
-          <li><a href="archive.html">6</a></li>
-          <li><a href="archive.html">7</a></li>
-          <li><a href="archive.html">8</a></li>
-          <li><a href="archive.html">9</a></li>
-      </ul>
-    </div>
-    <?php get_footer(); ?>
+  <?php if( function_exists("the_pagination") ) the_pagination(); ?>
+</div>
+    
+    
+<?php get_footer(); ?>
 <script src="js/jquery-3.6.0.js"></script>
 <script src="js/Hamburger.js"></script>
