@@ -103,4 +103,37 @@ function the_pagination() {
         'mid_size'     => 1
     ) );
     echo '</nav>';
+}
+
+function create_post_type() {
+    register_post_type( 'item', [ // 投稿タイプ名
+        'labels' => [
+            'name'          => '商品', // 管理画面上で表示する投稿タイプ名
+            'singular_name' => 'item',    // カスタム投稿の識別名
+        ],
+        'public'        => true,  // 投稿タイプをpublicにする
+        'has_archive'   => true, // アーカイブ機能ON
+        'menu_position' => 5,     // 管理画面上での配置場所
+        'menu_icon'     => 'dashicons-store', //管理画面右側のバーにつくアイコン設定
+        'taxonomies'    => [
+            'item_cat'
+        ],
+        'hierarchical'  => true,
+        'supports'      => [
+            'title',
+            'editor',
+            'thumbnail',
+            'page-attributes'
+        ],
+        ]);
+
+    register_taxonomy( 'item_cat', 'item', [
+        'labels' => [
+            'name'          => '商品カテゴリー',
+            'edit_item'     =>'商品カテゴリーを編集',
+        ],
+        'public' => true, 
+        'hierarchical' => true, 
+        ]);
     }
+add_action( 'init', 'create_post_type' );

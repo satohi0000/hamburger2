@@ -14,11 +14,14 @@
         while(have_posts()):
         the_post();?>
       </div>
-      <div id="post-<?php the_ID(); ?>"<?php post_class(); ?><?php the_content(); ?>>
-      <?php endwhile;else: ?>
+      <div class="p-article__left__topic">
+        <div id="post-<?php the_ID(); ?>"<?php post_class(); ?><?php the_content(); ?>
+        <?php endwhile;else: ?>
         <p>表示する記事がありません</p>
-      <?php endif; ?>
+        <?php endif; ?>
+      </div>
     </article>
+    <?php get_sidebar(); ?> 
   </div> 
-<?php get_sidebar(); ?> 
+  
 <?php get_footer(); ?>

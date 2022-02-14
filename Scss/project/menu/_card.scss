@@ -20,6 +20,10 @@
     display: flex;
     margin:15px 0 0 0;
     background: #3C2B1C;
+    &_custom{
+        display: flex;
+        position: relative;
+    }
     &__intro{
         position: relative;
         display: flex;
