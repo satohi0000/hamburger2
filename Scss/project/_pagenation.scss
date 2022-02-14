@@ -6,19 +6,32 @@
     justify-content: center;
     ul{
         display: flex;
+        margin-top: 10px;
         li{
-            padding: 0 8px;
+            padding: 10px 8px;
             font-size: 1.2rem;
             @include tab{
                 font-size: 0.8rem;
-                padding: 0 4px;
        
+            }
+            .dots{
+                padding: 10px 0 0 0;
+            }
+            .current{
+                border: solid 3px #3C2B1C;
+                background-color: #3C2B1C;
+                color: #fff;
+                font-size: 2.7rem;
+                @include tab{
+                    font-size: 2.2rem;
+                }
             }
             a{
                 display: block;
                 color: #3C2B1C;
                 border: solid 1px #3C2B1C;
                 padding: 10px;
+                margin: 6px 0 0 0;
             }
             @include tab{
                 font-size: 0.8rem;

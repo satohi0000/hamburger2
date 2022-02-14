@@ -7,6 +7,14 @@
         @include tab{
             width: 100%;
         }
+        &__search-result{
+            font-size: 1.5rem;
+            padding: 15px 0;
+            font-weight: bold;
+            @include tab{
+                font-size: 1.2rem;
+            }
+        }
         &__page{
             &__top{
                 display: flex;
