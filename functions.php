@@ -15,7 +15,6 @@ function hamburger_title( $title ) {
 add_filter( 'pre_get_document_title', 'hamburger_title' ); //
 
 function hamburger_script(){ 
-    wp_enqueue_style( 'font-awesome', '"//use.fontawesome.com/releases/v5.6.1/css/all.css"', array(), '5.6.1' );
     wp_enqueue_style( 'hamburger', get_template_directory_uri() . '/css/hamburger.css', array(), '1.0.0' );
     wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.0.0' );
     wp_enqueue_script( 'toggle', get_template_directory_uri() . '/js/Hamburger.js', array('jquery'), '1.0.0', true);
