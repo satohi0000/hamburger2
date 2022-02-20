@@ -3,6 +3,11 @@ add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'custom-header' );
+add_theme_support( "wp-block-styles" );
+add_theme_support( "responsive-embeds" );
+add_theme_support( "html5", $args );
+add_theme_support( "custom-background", $args );
+add_theme_support( "align-wide" );
 
 
 function hamburger_title( $title ) {
@@ -39,31 +44,6 @@ function hamburger_widgets_init() {
 }
 add_action( 'widgets_init', 'hamburger_widgets_init' );
 
-
-
-register_sidebar(
-    array(
-      'name'          => 'タグウィジェット',
-      'id'            => 'tag_widget',
-      'description'   => 'タグ用ウィジェットです',
-      'before_widget' => '<div id="%1$s" class="widget %2$s">',
-      'after_widget'  => '</div>',
-      'before_title'  => '<h2><i class="fa fa-tags" aria-hidden="true"></i>',
-      'after_title'   => "</h2>\n",
-    )
-  );
-  register_sidebar(
-    array(
-      'name'          => 'アーカイブウィジェット',
-      'id'            => 'archive_widget',
-      'description'   => 'アーカイブ用ウィジェットです',
-      'before_widget' => '<div id="%1$s" class="widget %2$s">',
-      'after_widget'  => '</div>',
-      'before_title'  => '<h2><i class="fa fa-archive" aria-hidden="true"></i>',
-      'after_title'   => "</h2>\n",
-    )
-  );
-
 //カスタムメニュー
 function custom_theme_setup() {
     //メニューの登録
@@ -95,5 +75,66 @@ function the_pagination() {
     ) );
     echo '</nav>';
 }
+
+function add_my_editor_styles() {
+    add_theme_support( 'editor-styles' );
+    add_editor_style( get_theme_file_uri( '/css/style.css'));
+ }
+add_action( 'admin_init', 'add_my_editor_styles' );
+
+function lds_sc_box(){
+  register_block_pattern(
+    'my-shortcode/box',
+    array(
+      'title'       => 'box',
+      'description' => 'WEBEERにリンクを貼るテスト',
+      'content'     => '<a href="https://webeer.tech">WEBEER</a>',
+      'keywords'    => 'kanren',
+      'categories' => array( 'shortcode' )
+    )
+  );
+  register_block_pattern_category(
+    'shortcode',
+    array( 'label' => 'ショートコード' )
+  );
+}
+add_action( 'init', 'lds_sc_box' );
+
+register_sidebar(
+    array(
+      'name'          => 'タグウィジェット',
+      'id'            => 'tag_widget',
+      'description'   => 'タグ用ウィジェットです',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h2><i class="fa fa-tags" aria-hidden="true"></i>',
+      'after_title'   => "</h2>\n",
+    )
+);
+
+register_sidebar(
+    array(
+      'name'          => 'アーカイブウィジェット',
+      'id'            => 'archive_widget',
+      'description'   => 'アーカイブ用ウィジェットです',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h2><i class="fa fa-archive" aria-hidden="true"></i>',
+      'after_title'   => "</h2>\n",
+    )
+);
+
+register_block_style(
+    'core/image', // ブロック名
+    [
+        'name'         => 'shadow', // スタイルで付けるクラスに使う名前
+        'label'        => '影付き',
+        'inline_style' => '.is-style-shadow {
+            box-shadow: 10px 5px 5px black;
+        }', // 追加するCSS
+    ]
+);
+
+
 
 
