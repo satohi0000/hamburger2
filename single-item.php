@@ -22,6 +22,7 @@
     </article>
     <?php get_sidebar(); ?> 
   </div> 
-
+  <?php comments_template(); ?>
+  
 <?php get_footer(); ?>
 
