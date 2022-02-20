@@ -1,3 +1,4 @@
+<!-- 投稿ページ -->
 <?php get_header(); ?> 
   <div class="p-article">
     <article class="p-article__left">
@@ -23,5 +24,5 @@
     </article>
     <?php get_sidebar(); ?> 
   </div> 
-  
 <?php get_footer(); ?>
+<?php wp_link_pages(); ?>
