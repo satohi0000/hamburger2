@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .admin-bar .header {
   top: 35px;
 }
@@ -1272,5 +1273,14 @@ input, select {
 
 .c-category-title {
   display: none;
+}
+
+.wp-caption,
+#honbun .wp-caption-text {
+  font-size: 90%;
+}
+
+.sticky, .gallery-caption, .bypostauthor, .alignright, .alignleft, .aligncenter {
+  font-size: 100%;
 }
 /*# sourceMappingURL=hamburger.css.map */
