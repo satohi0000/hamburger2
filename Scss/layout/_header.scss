@@ -27,7 +27,7 @@
         &__menu{
             &__botton{
                 font-size: 1.5rem;
-                margin: 10px -80px 160px ; 
+                margin: 10px 0px 160px ; 
                 cursor: pointer;
                 display: none;
                 z-index: 999;
@@ -35,6 +35,7 @@
                 font-weight: bold;
                 @include tab{
                     display: flex;
+                    font-size: 2rem;
                 }
                 @include sp{
                    left:25px;
