@@ -3,9 +3,11 @@
   <div class="p-article">
     <article class="p-article__left">
       <div class="p-article__left__single__top">
-        <p class="responsive-thumbnail">
-         <?php the_post_thumbnail('full'); ?>
-        </p>
+        <div class="p-article__left__single__top__img">
+          <p class="responsive-thumbnail">
+          <?php the_post_thumbnail('full'); ?>
+          </p>
+        </div>
         <a href="#">
           <?php the_title(); ?>
         </a>

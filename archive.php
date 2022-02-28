@@ -39,15 +39,8 @@
     <?php get_sidebar(); ?>
   </div>
 
-  
-
-
-
 <div class="p-pagenation">
   <?php if( function_exists("the_pagination") ) the_pagination(); ?>
 </div>
     
-    
 <?php get_footer(); ?>
-<script src="js/jquery-3.6.0.js"></script>
-<script src="js/Hamburger.js"></script>

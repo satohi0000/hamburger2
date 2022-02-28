@@ -2,6 +2,9 @@
 .l-contents{
     display: flex;
     justify-content: space-between;
+    &__is-open{
+        position: fixed;
+    }
     &__left{
         width: 80%;
         @include tab{
