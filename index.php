@@ -25,15 +25,16 @@
               <hr class="line__side"></p>
               <div class="l-main__bottom__box">
                 <div class="l-main__bottom__box__1">
-                  <h2>Take out</h2>
+                  <h2>Eat in</h2>
                   <p>当店のテイクアウトで利用できる商品を掲載しています</p>
                 </div>
                 <div class="l-main__bottom__box__2">
-                  <h2>Take out</h2>
+                  <h2>Eat in</h2>
                   <p>当店のテイクアウトで利用できる商品を掲載しています</p>
                 </div>
               </div>
             </div>
+            
           </div>
           <div class="l-main__under">
             <div class="l-main__under__map">
