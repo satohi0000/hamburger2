@@ -135,6 +135,20 @@ register_block_style(
     ]
 );
 
+//投稿一覧とカスタム投稿タイプの記事を混ぜるコード
+function change_posts_per_page($query) {
+ 
+    if ( is_admin() || ! $query->is_main_query() ){
+         return;
+     }
+    if ( is_front_page() && $query->is_main_query() ){
+         $query->set('post_type', array( 'post', 'item'));
+         return;
+     }
+    }
+    add_action( 'pre_get_posts', 'change_posts_per_page' );
+    
+
 
 
 

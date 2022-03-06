@@ -1,10 +1,10 @@
-<?php get_header(); ?> 
-  <div class="l-contents">
-    <article class="l-contents__left">
-       <div class="l-main">
-         <div class="l-main__top">
-           <a href="#"><p>ダミーサイト</p></a>
-          </div>
+<?php get_header(); ?>
+<div class="l-contents">
+  <article class="l-contents__left">
+    <div class="l-main">
+      <div class="l-main__top">
+        <a href="#"><p>ダミーサイト</p></a>
+      </div>
           <div class="l-main__bottom">
             <div class="l-main__bottom__left">
               <a href="#"><p class="title">Take Out</p></a>

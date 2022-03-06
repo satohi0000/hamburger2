@@ -14,5 +14,7 @@
         </div>
         <?php endif; ?>
     </div>
+    <div class="l-sidebar2">
+    <span class="l-sidebar2__batsu"></span>
+    </div>
 </aside>
-

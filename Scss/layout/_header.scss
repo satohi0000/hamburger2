@@ -1,4 +1,4 @@
-@import "../foundation/mixin";
+
 
 .l-header{
     width: 100%;
@@ -6,26 +6,27 @@
     background-color: #FFF7EF;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
     &__left{
         width: 80%;
         display: flex;
-        justify-content: space-between;
         h1{
             margin: 0 0 0 50px;
         }
         a{
+            display: block;
             color: #707070;
             font-size: 3.0rem;
         }
         @include tab{
-            width: 100%;
-            display: flex;
+            width: 270px;
+            margin: auto;
+            display: block;
             text-align: center;
             flex-direction: column;
+
         }
         &__menu{
-            margin: 0 0 0 -20px;
             &__botton{
                 font-size: 1.5rem;
                 margin: 10px 0px 160px ; 
@@ -52,14 +53,17 @@
         right: 10px;
         &__box{
            padding: 0 0 0 30px;
-           width: 300px;
            height: 2rem;
            border-radius: 0.6rem; 
            border: solid 1px #707070;
-           font-size: 1.6rem;
+           font-size: 2.5rem;
            font-weight: 500;
+           @include sp{
+               font-size: 1.8rem;
+           }
         }
         &__botton{
+            padding: 0 25px;
             margin: 0 0 0 10px;
             width: 5rem;
             height: 2rem;
@@ -89,11 +93,14 @@
 
 .fa-search{
     top: 8px;
-    margin-right: 360px;
+    margin-right: 590px;
     position: absolute;
     z-index: 999;
     @include tab{
-        margin-right: 350px;
+        margin-right: 500px;
+    }
+    @include sp{
+        margin-right: 390px;
     }
 }
 
