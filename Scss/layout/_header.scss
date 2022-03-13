@@ -10,8 +10,10 @@
     &__left{
         width: 80%;
         display: flex;
+        justify-content: space-between;
         h1{
             margin: 0 0 0 50px;
+            font-weight: bold;
         }
         a{
             display: block;
@@ -37,7 +39,8 @@
                 font-weight: bold;
                 @include tab{
                     display: flex;
-                    font-size: 2rem;
+                    writing-mode: horizontal-tb;
+                    
                 }
                 @include sp{
                    left:25px;
@@ -46,17 +49,16 @@
         }
     }
     &__form{
-        margin: 25px 0 0 50px;
+        margin: 25px 0 0 0px;
         position: relative;
         display: flex;
         justify-content: center;
-        right: 10px;
         &__box{
-           padding: 0 0 0 30px;
+           padding: 0 0 0 0px;
            height: 2rem;
            border-radius: 0.6rem; 
            border: solid 1px #707070;
-           font-size: 2.5rem;
+           font-size: 2.0rem;
            font-weight: 500;
            @include sp{
                font-size: 1.8rem;
@@ -64,7 +66,8 @@
         }
         &__botton{
             padding: 0 25px;
-            margin: 0 0 0 10px;
+            margin: 0 20px 0 10px;
+            font-size: 0.8rem;
             width: 5rem;
             height: 2rem;
             background-color: #F2EDE9;
@@ -93,11 +96,11 @@
 
 .fa-search{
     top: 8px;
-    margin-right: 590px;
+    margin-right: 410px;
     position: absolute;
     z-index: 999;
     @include tab{
-        margin-right: 500px;
+        margin-right: 400px;
     }
     @include sp{
         margin-right: 390px;
@@ -107,8 +110,14 @@
 .line{
     &__side{
       border-top:4px solid white;
-      width: 90px;
-      margin-left: 20px;
+      width: 80px;
+      margin: 20px;
+      &__under{
+        border-top:4px solid white;
+        width: 80px;
+        margin: 20px;
+        margin: 0 0 0 70px;
+      }
     }&__border{
       border-top:2px solid white;
       width: 20px;

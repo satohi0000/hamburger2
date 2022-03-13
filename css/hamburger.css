@@ -13,7 +13,18 @@ body {
   font-family: "M+ 1m";
 }
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,9 +32,15 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  list-style: none;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -35,11 +52,7 @@ blockquote, q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after {
-  content: '';
-  content: none;
-}
-
+blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
@@ -51,6 +64,8 @@ a {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  text-decoration: none;
+  list-style: none;
 }
 
 /* change colours to suit your needs */
@@ -69,7 +84,7 @@ mark {
 }
 
 del {
-  text-decoration: line-through;
+  text-decoration: none;
 }
 
 abbr[title], dfn[title] {
@@ -94,11 +109,6 @@ hr {
 
 input, select {
   vertical-align: middle;
-}
-
-* {
-  list-style-type: none;
-  text-decoration: none;
 }
 
 .l-archive__top {
@@ -575,7 +585,7 @@ input, select {
   font-size: 34px;
   font-weight: 600;
   color: #707070;
-  margin: 100px 40px;
+  margin: 100px 30px;
 }
 
 @media (max-width: 1200px) {
@@ -585,7 +595,7 @@ input, select {
 }
 
 .l-sidebar ul {
-  margin: -40px 0px 0px 10px;
+  margin: -40px 0px 0px 25px;
 }
 
 @media (max-width: 1200px) {
@@ -631,7 +641,7 @@ input, select {
 
 .l-sidebar ul li ul {
   padding-top: 65px;
-  padding-left: 10px;
+  padding-left: 0px;
 }
 
 @media (max-width: 1200px) {
@@ -688,10 +698,14 @@ input, select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .l-header__left h1 {
   margin: 0 0 0 50px;
+  font-weight: bold;
 }
 
 .l-header__left a {
@@ -728,7 +742,9 @@ input, select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 2rem;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
   }
 }
 
@@ -739,7 +755,7 @@ input, select {
 }
 
 .l-header__form {
-  margin: 25px 0 0 50px;
+  margin: 25px 0 0 0px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -747,15 +763,14 @@ input, select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  right: 10px;
 }
 
 .l-header__form__box {
-  padding: 0 0 0 30px;
+  padding: 0 0 0 0px;
   height: 2rem;
   border-radius: 0.6rem;
   border: solid 1px #707070;
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   font-weight: 500;
 }
 
@@ -767,7 +782,8 @@ input, select {
 
 .l-header__form__botton {
   padding: 0 25px;
-  margin: 0 0 0 10px;
+  margin: 0 20px 0 10px;
+  font-size: 0.8rem;
   width: 5rem;
   height: 2rem;
   background-color: #F2EDE9;
@@ -798,14 +814,14 @@ input, select {
 
 .fa-search {
   top: 8px;
-  margin-right: 590px;
+  margin-right: 410px;
   position: absolute;
   z-index: 999;
 }
 
 @media (max-width: 1200px) {
   .fa-search {
-    margin-right: 500px;
+    margin-right: 400px;
   }
 }
 
@@ -817,8 +833,15 @@ input, select {
 
 .line__side {
   border-top: 4px solid white;
-  width: 90px;
-  margin-left: 20px;
+  width: 80px;
+  margin: 20px;
+}
+
+.line__side__under {
+  border-top: 4px solid white;
+  width: 80px;
+  margin: 20px;
+  margin: 0 0 0 70px;
 }
 
 .line__border {
@@ -850,10 +873,8 @@ input, select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 80px 40px;
+  margin: 0 0px 0 0;
+  padding: 120px 60px;
 }
 
 @media (max-width: 1200px) {
@@ -871,7 +892,7 @@ input, select {
 }
 
 .l-main__bottom__right {
-  height: 1000px;
+  height: 1200px;
   width: 550px;
   background-image: url("../pictures/Eat in.png");
   background-size: cover;
@@ -882,13 +903,16 @@ input, select {
 
 .l-main__bottom__right > a {
   color: white;
-  font-size: 2rem;
+}
+
+.l-main__bottom__right > a > p {
+  font-size: 3.5rem;
+  font-family: Roboto;
 }
 
 .l-main__bottom__right p {
   font-weight: bold;
-  line-height: 30px;
-  padding: 25px 5px 15px 5px;
+  padding: 35px 5px 15px 15px;
 }
 
 @media (max-width: 1200px) {
@@ -906,24 +930,27 @@ input, select {
 }
 
 .l-main__bottom__left {
-  height: 1000px;
+  height: 1200px;
   width: 550px;
   background-image: url("../pictures/Take out.png");
   background-size: cover;
   background-position: center;
   position: relative;
-  margin: 0px 20px 0 0;
+  margin: 0px 80px 0 0;
 }
 
 .l-main__bottom__left > a {
   color: white;
-  font-size: 2rem;
+}
+
+.l-main__bottom__left > a > p {
+  font-size: 3.5rem;
+  font-family: Roboto;
 }
 
 .l-main__bottom__left p {
   font-weight: bold;
-  line-height: 30px;
-  padding: 25px 5px 15px 5px;
+  padding: 35px 5px 15px 15px;
 }
 
 @media (max-width: 1200px) {
@@ -941,6 +968,7 @@ input, select {
 }
 
 .l-main__bottom__box {
+  font-weight: bold;
   position: absolute;
   bottom: 30px;
   margin: 10px;
@@ -949,10 +977,10 @@ input, select {
 }
 
 .l-main__bottom__box__1, .l-main__bottom__box__2 {
-  padding: 10px 0 80px 0px;
+  padding: 10px 0 50px 0px;
   margin: 10px 0px 0px 0px;
   background-color: rgba(255, 255, 255, 0.5);
-  font-size: 1.0rem;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 1200px) {
@@ -964,8 +992,8 @@ input, select {
 
 .l-main__bottom__box h2 {
   margin-top: 5px;
-  padding-left: 10px;
-  font-size: 2.5rem;
+  padding-left: 15px;
+  font-size: 1.5rem;
 }
 
 .l-main__under__map {
@@ -1004,13 +1032,15 @@ input, select {
 .l-main__under__map__box .title {
   font-size: 2rem;
   padding: 10px;
-  margin: 20px;
+  margin: 60px;
 }
 
 .l-main__under__map__box p {
+  color: white;
   margin-top: 50px;
   line-height: 40px;
   line-height: 1.6rem;
+  margin: 60px 60px 0 60px;
 }
 
 .l-main__under__map__box:hover {
@@ -1375,10 +1405,6 @@ input, select {
   .p-article ul {
     padding: 0 0 30px;
   }
-}
-
-.p-article ul > li > ul {
-  margin: 20px;
 }
 
 .p-article pre {

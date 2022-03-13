@@ -65,14 +65,14 @@
         font-size: 34px;
         font-weight: 600;
         color: #707070;
-        margin: 100px 40px;
+        margin: 100px 30px;
         @include tab{
             display: none;
         }
 
     }
     ul{
-        margin: -40px 0px 0px 10px;
+        margin: -40px 0px 0px 25px;
         @include tab{
            margin: 120px 0px 0px 10px;
         }
@@ -108,7 +108,7 @@
                 @include tab{
                     padding-top: 0px;
                 }
-                padding-left: 10px;
+                padding-left: 0px;
 
                 li{
                     font-size: 20px;

@@ -16,8 +16,9 @@
     }
     &__bottom{
         display: flex;
-        justify-content: space-between;
-        padding: 80px 40px;
+        
+        margin: 0 0px 0 0;
+        padding: 120px 60px;
         @include tab{
             padding: 40px 20px;
             margin: 0 15px 0 15px;
@@ -27,7 +28,7 @@
             padding: 20px 20px;
         }
         &__right{
-            height: 1000px;
+            height: 1200px;
             width: 550px;
             background-image: url("../pictures/Eat in.png");
             background-size: cover;
@@ -36,12 +37,14 @@
             margin: 0px 0px 0 0;
             >a{
                 color: white;
-                font-size: 2rem;
+                >p{
+                    font-size: 3.5rem;
+                    font-family: Roboto;
+                }
             }
             p{
                 font-weight: bold;
-                line-height: 30px;
-                padding: 25px 5px 15px 5px;
+                padding: 35px 5px 15px 15px;
             }
             @include tab{
                 height: 700px;
@@ -53,21 +56,24 @@
             }
         }
         &__left{
-            height: 1000px;
+            height: 1200px;
             width: 550px;
             background-image: url("../pictures/Take out.png");
             background-size: cover;
             background-position: center;
             position: relative;
-            margin: 0px 20px 0 0;
+            margin: 0px 80px 0 0;
             >a{
                 color: white;
-                font-size: 2rem;
+                >p{
+                    font-size: 3.5rem;
+                    font-family: Roboto;
+                }
             }
             p{
                 font-weight: bold;
-                line-height: 30px;
-                padding: 25px 5px 15px 5px;
+                
+                padding: 35px 5px 15px 15px;
             }
             @include tab{
                 height: 700px;
@@ -79,16 +85,17 @@
             }
         }
         &__box{
+            font-weight: bold;
             position: absolute;
             bottom: 30px;
             margin: 10px;
             width: 95%;
             color: #3C2A10;
             &__1,&__2{
-                padding: 10px 0 80px 0px;
+                padding: 10px 0 50px 0px;
                 margin: 10px 0px 0px 0px;
                 background-color:rgba($color:white, $alpha: 0.5);
-                font-size: 1.0rem;
+                font-size: 0.8rem;
                 @include tab{
                     height: 80px;
                     top:100px;
@@ -96,8 +103,8 @@
             }
             h2{
                 margin-top: 5px;
-                padding-left: 10px;
-                font-size: 2.5rem;
+                padding-left: 15px;
+                font-size: 1.5rem;
            }
        }
     }
@@ -126,12 +133,14 @@
                 .title{
                     font-size: 2rem;
                     padding: 10px;
-                    margin: 20px;
+                    margin: 60px;
                 }
                 p{
+                    color: white;
                     margin-top: 50px;
                     line-height: 40px;
                     line-height: 1.6rem;
+                    margin: 60px 60px 0 60px;
                 }
                 &:hover{
                     display: none;
