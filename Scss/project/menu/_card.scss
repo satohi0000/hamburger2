@@ -2,8 +2,9 @@
     width: 50%;
     display: flex;
     align-items: center;
-    @include tab{
+    @include sp{
         width: 100%;
+       
     }
     img{
         width:200%;
@@ -25,12 +26,12 @@
     &__intro{
         position: relative;
         display: flex;
-        margin: 0px 0 0 0;
         height: auto;
         z-index: 2;
         width: 100%;
         @include sp{
-           flex-direction: column;
+            display: block;
+            flex-direction: column;
         }
     &__right{
         position: relative;
@@ -40,20 +41,26 @@
         @include sp{
             width: 100%;
         }
+        &__h2{
+            color: white;
+            margin: 40px 20px;
+            font-size: 1.3rem;
+        }   
     &__title{
         text-align: center;
         right: 50%;
         color: white;
         font-size: 2rem;
-        
+        margin: 30px  0;
         @include sp{
-            font-size: 1.4rem;
+            font-size: 1.6rem;
         }
     }
     &__except{
         color: white;
         right: 0%;
         font-size: 1.2rem;
+        margin: 20px;
         @include tab{
             font-size: 1.4rem;
         }
@@ -61,11 +68,11 @@
     }
     &__permalink{
         background-color: white;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         font-weight: 700;
-        padding: 4px;
-        margin: 30px auto;
-        border-radius: 30px;
+        padding: 10px;
+        margin: 40px auto;
+        border-radius: 40px;
         line-height: 50px;
         width: 50%;
         text-align: center;

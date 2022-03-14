@@ -22,6 +22,9 @@
           <div class="p-menu-card__intro__right__title">
             <h3><?php the_title(); ?></h3>
           </div>
+          <div class="p-menu-card__intro__right__h2">
+          <h4>小見出しが入ります</h4>
+          </div>
           <div class="p-menu-card__intro__right__except">
             <?php the_excerpt(); ?>
           </div> 

@@ -38,7 +38,7 @@
             >a{
                 color: white;
                 >p{
-                    font-size: 3.5rem;
+                    font-size: 3.0rem;
                     font-family: Roboto;
                 }
             }
@@ -62,11 +62,11 @@
             background-size: cover;
             background-position: center;
             position: relative;
-            margin: 0px 80px 0 0;
+            margin: 0px 50px 0 0;
             >a{
                 color: white;
                 >p{
-                    font-size: 3.5rem;
+                    font-size: 3.0rem;
                     font-family: Roboto;
                 }
             }
@@ -93,7 +93,7 @@
             color: #3C2A10;
             &__1,&__2{
                 padding: 10px 0 50px 0px;
-                margin: 10px 0px 0px 0px;
+                margin: 10px 10px 0px 0px;
                 background-color:rgba($color:white, $alpha: 0.5);
                 font-size: 0.8rem;
                 @include tab{
@@ -132,7 +132,7 @@
                 }
                 .title{
                     font-size: 2rem;
-                    padding: 10px;
+                   
                     margin: 60px;
                 }
                 p{

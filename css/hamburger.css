@@ -19,7 +19,7 @@ abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var,
 b, i,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
@@ -457,7 +457,7 @@ input, select {
 }
 
 .l-footer__center {
-  padding-top: 20px;
+  padding-top: 30px;
   color: white;
   font-size: 1.2rem;
 }
@@ -475,6 +475,7 @@ input, select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  list-style-type: none;
 }
 
 .l-footer__center li {
@@ -585,7 +586,7 @@ input, select {
   font-size: 34px;
   font-weight: 600;
   color: #707070;
-  margin: 100px 30px;
+  margin: 110px 30px;
 }
 
 @media (max-width: 1200px) {
@@ -595,12 +596,12 @@ input, select {
 }
 
 .l-sidebar ul {
-  margin: -40px 0px 0px 25px;
+  margin: -30px 0px 0px 0px;
 }
 
 @media (max-width: 1200px) {
   .l-sidebar ul {
-    margin: 120px 0px 0px 10px;
+    margin: 10px 0px 0px 10px;
   }
 }
 
@@ -609,10 +610,12 @@ input, select {
   font-size: 24px;
   font-weight: bold;
   margin-left: 0px;
+  list-style-type: none;
 }
 
 .l-sidebar ul li > a {
   color: #707070;
+  margin-left: 0%;
 }
 
 @media (max-width: 1200px) {
@@ -633,6 +636,10 @@ input, select {
   }
 }
 
+.l-sidebar ul li > ul > li {
+  margin: 10px 0px 0px 15px;
+}
+
 @media (max-width: 1200px) {
   .l-sidebar ul li > ul > li {
     margin: 0px 0px 0px 0px;
@@ -640,7 +647,7 @@ input, select {
 }
 
 .l-sidebar ul li ul {
-  padding-top: 65px;
+  padding-top: 55px;
   padding-left: 0px;
 }
 
@@ -663,6 +670,7 @@ input, select {
 .title {
   font-size: 3rem;
   color: white;
+  font-family: Roboto;
 }
 
 @media (max-width: 1200px) {
@@ -739,6 +747,8 @@ input, select {
 
 @media (max-width: 1200px) {
   .l-header__left__menu__botton {
+    margin-right: 20px;
+    font-size: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -755,7 +765,7 @@ input, select {
 }
 
 .l-header__form {
-  margin: 25px 0 0 0px;
+  margin: 25px 0px 0 75px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,10 +797,11 @@ input, select {
   width: 5rem;
   height: 2rem;
   background-color: #F2EDE9;
-  border-radius: 0.6rem;
+  border-radius: 0.7rem;
   border: solid 1px #707070;
   color: #707070;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .l-header__right {
@@ -906,7 +917,7 @@ input, select {
 }
 
 .l-main__bottom__right > a > p {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   font-family: Roboto;
 }
 
@@ -936,7 +947,7 @@ input, select {
   background-size: cover;
   background-position: center;
   position: relative;
-  margin: 0px 80px 0 0;
+  margin: 0px 50px 0 0;
 }
 
 .l-main__bottom__left > a {
@@ -944,7 +955,7 @@ input, select {
 }
 
 .l-main__bottom__left > a > p {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   font-family: Roboto;
 }
 
@@ -978,7 +989,7 @@ input, select {
 
 .l-main__bottom__box__1, .l-main__bottom__box__2 {
   padding: 10px 0 50px 0px;
-  margin: 10px 0px 0px 0px;
+  margin: 10px 10px 0px 0px;
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 0.8rem;
 }
@@ -1031,7 +1042,6 @@ input, select {
 
 .l-main__under__map__box .title {
   font-size: 2rem;
-  padding: 10px;
   margin: 60px;
 }
 
@@ -1252,7 +1262,7 @@ input, select {
 }
 
 .p-article__left__topic {
-  margin: 35px 0 0 25px;
+  margin: 35px 40px 0 40px;
 }
 
 .p-article__left__page__top {
@@ -1386,10 +1396,6 @@ input, select {
   }
 }
 
-.p-article ol > li {
-  list-style: decimal;
-}
-
 .p-article ol > li > ol {
   padding: 30px 20px;
 }
@@ -1450,7 +1456,7 @@ input, select {
           align-items: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 599px) {
   .responsive-thumbnail {
     width: 100%;
   }
@@ -1482,7 +1488,6 @@ input, select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px 0 0 0;
   height: auto;
   z-index: 2;
   width: 100%;
@@ -1490,6 +1495,7 @@ input, select {
 
 @media (max-width: 599px) {
   .p-menu-card__intro {
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1510,16 +1516,23 @@ input, select {
   }
 }
 
+.p-menu-card__intro__right__h2 {
+  color: white;
+  margin: 40px 20px;
+  font-size: 1.3rem;
+}
+
 .p-menu-card__intro__right__title {
   text-align: center;
   right: 50%;
   color: white;
   font-size: 2rem;
+  margin: 30px  0;
 }
 
 @media (max-width: 599px) {
   .p-menu-card__intro__right__title {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1527,6 +1540,7 @@ input, select {
   color: white;
   right: 0%;
   font-size: 1.2rem;
+  margin: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -1537,11 +1551,11 @@ input, select {
 
 .p-menu-card__intro__right__permalink {
   background-color: white;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   font-weight: 700;
-  padding: 4px;
-  margin: 30px auto;
-  border-radius: 30px;
+  padding: 10px;
+  margin: 40px auto;
+  border-radius: 40px;
   line-height: 50px;
   width: 50%;
   text-align: center;

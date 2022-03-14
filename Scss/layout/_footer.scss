@@ -2,7 +2,7 @@
     background-color:#957F6A;
     height: 150px;
     &__center{
-        padding-top: 20px;
+        padding-top: 30px;
         color: white;
         font-size: 1.2rem;
         a{
@@ -13,6 +13,7 @@
         ul{
             display: flex;
             justify-content: center;
+            list-style-type: none;
         }
         li{ 
             position: relative; // 子要素の位置の基準指定
