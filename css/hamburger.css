@@ -13,18 +13,73 @@ body {
   font-family: "M+ 1m";
 }
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -39,8 +94,17 @@ body {
   line-height: 1;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -48,13 +112,16 @@ nav ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -87,7 +154,8 @@ del {
   text-decoration: none;
 }
 
-abbr[title], dfn[title] {
+abbr[title],
+dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
@@ -107,7 +175,8 @@ hr {
   padding: 0;
 }
 
-input, select {
+input,
+select {
   vertical-align: middle;
 }
 
@@ -216,9 +285,9 @@ input, select {
 }
 
 .l-contents__left__single__switch {
-  background-color: #E6E0DC;
+  background-color: #e6e0dc;
   color: black;
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: 500;
   padding: 4px;
   margin: 30px;
@@ -296,7 +365,7 @@ input, select {
 
 .l-contents__left__single__gray {
   margin: 30px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   font-size: 0.8rem;
 }
 
@@ -414,7 +483,7 @@ input, select {
   margin-top: 100px 0 0 0;
   position: absolute;
   z-index: 2;
-  background-color: #3C2B1C;
+  background-color: #3c2b1c;
   color: white;
 }
 
@@ -442,7 +511,7 @@ input, select {
 
 .l-contents__right {
   width: 20%;
-  background-color: #F2EDE9;
+  background-color: #f2ede9;
 }
 
 @media (max-width: 1200px) {
@@ -452,7 +521,7 @@ input, select {
 }
 
 .l-footer {
-  background-color: #957F6A;
+  background-color: #957f6a;
   height: 150px;
 }
 
@@ -607,15 +676,22 @@ input, select {
 
 .l-sidebar ul li {
   padding-bottom: 15px;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
-  margin-left: 0px;
+  margin-left: 20px;
   list-style-type: none;
+}
+
+@media (max-width: 1200px) {
+  .l-sidebar ul li {
+    font-size: 24px;
+  }
 }
 
 .l-sidebar ul li > a {
   color: #707070;
-  margin-left: 0%;
+  margin-left: 5%;
+  font-size: 1.4rem;
 }
 
 @media (max-width: 1200px) {
@@ -627,6 +703,7 @@ input, select {
 @media (max-width: 599px) {
   .l-sidebar ul li > a {
     margin-left: 0%;
+    font-size: 1.2rem;
   }
 }
 
@@ -692,7 +769,7 @@ input, select {
 .l-header {
   width: 100%;
   height: 200px;
-  background-color: #FFF7EF;
+  background-color: #fff7ef;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,7 +796,7 @@ input, select {
 .l-header__left a {
   display: block;
   color: #707070;
-  font-size: 3.0rem;
+  font-size: 3rem;
 }
 
 @media (max-width: 1200px) {
@@ -776,11 +853,11 @@ input, select {
 }
 
 .l-header__form__box {
-  padding: 0 0 0 0px;
+  padding: 0 0 0 25px;
   height: 2rem;
   border-radius: 0.6rem;
   border: solid 1px #707070;
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -796,7 +873,7 @@ input, select {
   font-size: 0.8rem;
   width: 5rem;
   height: 2rem;
-  background-color: #F2EDE9;
+  background-color: #f2ede9;
   border-radius: 0.7rem;
   border: solid 1px #707070;
   color: #707070;
@@ -807,7 +884,7 @@ input, select {
 .l-header__right {
   width: 20%;
   height: 200px;
-  background-color: #F2EDE9;
+  background-color: #f2ede9;
 }
 
 @media (max-width: 1200px) {
@@ -825,20 +902,20 @@ input, select {
 
 .fa-search {
   top: 8px;
-  margin-right: 410px;
+  margin: 0px 440px 0px 0px;
   position: absolute;
   z-index: 999;
 }
 
 @media (max-width: 1200px) {
   .fa-search {
-    margin-right: 400px;
+    margin-right: 440px;
   }
 }
 
 @media (max-width: 599px) {
   .fa-search {
-    margin-right: 390px;
+    margin-right: 405px;
   }
 }
 
@@ -1085,7 +1162,7 @@ input, select {
 
 @media (max-width: 1200px) {
   .p-pagenation ul li {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
 }
 
@@ -1094,10 +1171,10 @@ input, select {
 }
 
 .p-pagenation ul li .current {
-  border: solid 3px #3C2B1C;
-  background-color: #3C2B1C;
+  border: solid 3px #3c2b1c;
+  background-color: #3c2b1c;
   color: #fff;
-  font-size: 2.0rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 1200px) {
@@ -1108,8 +1185,8 @@ input, select {
 
 .p-pagenation ul li a {
   display: block;
-  color: #3C2B1C;
-  border: solid 1px #3C2B1C;
+  color: #3c2b1c;
+  border: solid 1px #3c2b1c;
   padding: 10px;
   margin: 6px 0 0 0;
 }
@@ -1248,7 +1325,7 @@ input, select {
   display: -ms-flexbox;
   display: flex;
   font-weight: normal;
-  color: #3C2A10;
+  color: #3c2a10;
 }
 
 .p-article__left {
@@ -1367,7 +1444,7 @@ input, select {
 .p-article blockquote {
   padding: 33px 0;
   margin: 10px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding-left: 50px;
   padding-right: 50px;
   line-height: 1.6;
@@ -1416,7 +1493,7 @@ input, select {
 .p-article pre {
   padding: 33px 0;
   width: 100%;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 50px;
 }
 
@@ -1439,7 +1516,8 @@ input, select {
   padding: 30px;
 }
 
-.p-article figure table tr th, .p-article figure table tr td {
+.p-article figure table tr th,
+.p-article figure table tr td {
   padding: 30px;
   font-weight: 500;
   border: solid 1px;
@@ -1574,7 +1652,12 @@ input, select {
   font-size: 90%;
 }
 
-.sticky, .gallery-caption, .bypostauthor, .alignright, .alignleft, .aligncenter {
+.sticky,
+.gallery-caption,
+.bypostauthor,
+.alignright,
+.alignleft,
+.aligncenter {
   font-size: 100%;
 }
 /*# sourceMappingURL=hamburger.css.map */

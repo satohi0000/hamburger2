@@ -1,32 +1,32 @@
 @charset "utf-8";
- //====================
- //foundation
- //====================
+//====================
+//foundation
+//====================
 @import "./foundation/mixin";
 @import "./foundation/reset";
- //====================
- //layout
- //====================
+//====================
+//layout
+//====================
 @import "./layout/archive";
 @import "./layout/contents";
 @import "./layout/footer";
 @import "./layout/sidebar";
 @import "./layout/header";
 @import "./layout/main";
- //====================
- //project
- //====================
+//====================
+//project
+//====================
 @import "./project/pagenation";
 @import "./project/article";
 //====================
- //menu
- //====================
- @import "./project/menu/card";
+//menu
 //====================
- //object
- //====================
- @import "./object/component/category-title";
- //====================
- //WP
- //====================
- @import "./WP/caption"
+@import "./project/menu/card";
+//====================
+//object
+//====================
+@import "./object/component/category-title";
+//====================
+//WP
+//====================
+@import "./WP/caption";

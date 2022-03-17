@@ -1,147 +1,154 @@
-.p-pagenation{
-    width: 100%;
-    height: 200px;
+.p-pagenation {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    ul{
-        display: flex;
-        margin-top: 10px;
-        li{
-            padding: 10px 8px;
-            font-size: 1.2rem;
-            @include tab{
-                font-size: 1.0rem;
-       
-            }
-            .dots{
-                padding: 10px 0 0 0;
-            }
-            .current{
-                border: solid 3px #3C2B1C;
-                background-color: #3C2B1C;
-                color: #fff;
-                font-size: 2.0rem;
-                @include tab{
-                    font-size: 1.8rem;
-                }
-            }
-            a{
-                display: block;
-                color: #3C2B1C;
-                border: solid 1px #3C2B1C;
-                padding: 10px;
-                margin: 6px 0 0 0;
-                @include sp{
-                    display: none;
-                    border: none;
-                    font-size: 1.3rem;
-                }
-                &.prev{ //.prevのついた要素は表示し位置を指定
-                    @include sp{
-                        display: block;
-                        position: absolute;
-                        left: 0;
-                    }
-                    &::after{ //「前へ」部分のスタイル。基本は非表示だけどスマホの時だけ見せる
-                        width: 70px;
-                        content: "前へ";
-                        display: none;
-                        position: absolute;
-                        left: 30px;
-                        top: 12px;
-                        padding-left: 3px;
-                        @include sp{
-                            display: block;
-                        }
-                    }
-                }
-                &.next{
-                    @include sp{ //.nextのついた要素は表示し位置を指定
-                        display: block;
-                        position: absolute;
-                        right: 0;
-                    }
-                    &::before{ //「次へ」部分のスタイル。基本は非表示だけどスマホの時だけ見せる
-                        width: 70px;
-                        text-align: right;
-                        content: "次へ";
-                        display: none;
-                        position: absolute;
-                        right: 30px;
-                        top: 12px;
-                        padding-right: 3px;
-                        @include sp{
-                            display: block;
-                        }
-                    }
-                }
-            }
-            span{
-                line-height: 58px;
-                @include sp{
-                    display: none;
-                }
-            }
-            .current{
-                @include sp{
-                    display: none;
-                }
-            }
+    margin-top: 10px;
+    li {
+      padding: 10px 8px;
+      font-size: 1.2rem;
+      @include tab {
+        font-size: 1rem;
+      }
+      .dots {
+        padding: 10px 0 0 0;
+      }
+      .current {
+        border: solid 3px #3c2b1c;
+        background-color: #3c2b1c;
+        color: #fff;
+        font-size: 2rem;
+        @include tab {
+          font-size: 1.8rem;
         }
+      }
+      a {
+        display: block;
+        color: #3c2b1c;
+        border: solid 1px #3c2b1c;
+        padding: 10px;
+        margin: 6px 0 0 0;
+        @include sp {
+          display: none;
+          border: none;
+          font-size: 1.3rem;
+        }
+        &.prev {
+          //.prevのついた要素は表示し位置を指定
+          @include sp {
+            display: block;
+            position: absolute;
+            left: 0;
+          }
+          &::after {
+            //「前へ」部分のスタイル。基本は非表示だけどスマホの時だけ見せる
+            width: 70px;
+            content: "前へ";
+            display: none;
+            position: absolute;
+            left: 30px;
+            top: 12px;
+            padding-left: 3px;
+            @include sp {
+              display: block;
+            }
+          }
+        }
+        &.next {
+          @include sp {
+            //.nextのついた要素は表示し位置を指定
+            display: block;
+            position: absolute;
+            right: 0;
+          }
+          &::before {
+            //「次へ」部分のスタイル。基本は非表示だけどスマホの時だけ見せる
+            width: 70px;
+            text-align: right;
+            content: "次へ";
+            display: none;
+            position: absolute;
+            right: 30px;
+            top: 12px;
+            padding-right: 3px;
+            @include sp {
+              display: block;
+            }
+          }
+        }
+      }
+      span {
+        line-height: 58px;
+        @include sp {
+          display: none;
+        }
+      }
+      .current {
+        @include sp {
+          display: none;
+        }
+      }
     }
+  }
 }
 
-.p-pagenation{
-    &--pc, &--tab{
-        ul{ 
-            li{ 
-                a{
-                    @include sp{
-                        display: none;
-                    }
-                    &.prev{ //.prevのついた要素は表示し位置を指定
-                        @include sp{
-                            display: block;
-                            position: absolute;
-                            left: 0;
-                        }
-                        &::after{ //「前へ」部分のスタイル。基本は非表示だけどスマホの時だけ見せる
-                            width: 70px;
-                            content: "前へ";
-                            display: none;
-                            position: absolute;
-                            left: 30px;
-                            top: 12px;
-                            padding-left: 3px;
-                            @include sp{
-                                display: block;
-                            }
-                        }
-                    }
-                    &.next{
-                        @include sp{ //.nextのついた要素は表示し位置を指定
-                            display: block;
-                            position: absolute;
-                            right: 0;
-                        }
-                        &::before{ //「次へ」部分のスタイル。基本は非表示だけどスマホの時だけ見せる
-                            width: 70px;
-                            text-align: right;
-                            content: "次へ";
-                            display: none;
-                            position: absolute;
-                            right: 30px;
-                            top: 12px;
-                            padding-right: 3px;
-                            @include sp{
-                                display: block;
-                            }
-                        }
-                    }
-                }
-                
+.p-pagenation {
+  &--pc,
+  &--tab {
+    ul {
+      li {
+        a {
+          @include sp {
+            display: none;
+          }
+          &.prev {
+            //.prevのついた要素は表示し位置を指定
+            @include sp {
+              display: block;
+              position: absolute;
+              left: 0;
             }
+            &::after {
+              //「前へ」部分のスタイル。基本は非表示だけどスマホの時だけ見せる
+              width: 70px;
+              content: "前へ";
+              display: none;
+              position: absolute;
+              left: 30px;
+              top: 12px;
+              padding-left: 3px;
+              @include sp {
+                display: block;
+              }
+            }
+          }
+          &.next {
+            @include sp {
+              //.nextのついた要素は表示し位置を指定
+              display: block;
+              position: absolute;
+              right: 0;
+            }
+            &::before {
+              //「次へ」部分のスタイル。基本は非表示だけどスマホの時だけ見せる
+              width: 70px;
+              text-align: right;
+              content: "次へ";
+              display: none;
+              position: absolute;
+              right: 30px;
+              top: 12px;
+              padding-right: 3px;
+              @include sp {
+                display: block;
+              }
+            }
+          }
         }
+      }
     }
+  }
 }
