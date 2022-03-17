@@ -994,7 +994,7 @@ select {
 }
 
 .l-main__bottom__right > a > p {
-  font-size: 3.0rem;
+  font-size: 3rem;
   font-family: Roboto;
 }
 
@@ -1032,7 +1032,7 @@ select {
 }
 
 .l-main__bottom__left > a > p {
-  font-size: 3.0rem;
+  font-size: 3rem;
   font-family: Roboto;
 }
 
@@ -1061,7 +1061,7 @@ select {
   bottom: 30px;
   margin: 10px;
   width: 95%;
-  color: #3C2A10;
+  color: #3c2a10;
 }
 
 .l-main__bottom__box__1, .l-main__bottom__box__2 {
@@ -1123,6 +1123,8 @@ select {
 }
 
 .l-main__under__map__box p {
+  max-width: 100%;
+  height: auto;
   color: white;
   margin-top: 50px;
   line-height: 40px;
