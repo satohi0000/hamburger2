@@ -3,11 +3,12 @@
   <div class="p-article">
     <article class="p-article__left">
       <div class="p-article__left__single__top">
-        <div class="p-article__left__single__top__img">
-        </div>
-        <a href="#">
+        <div class="p-article__left__single__top__img"></div>
+        <div class="p-article__left__single__top__word">
+          <a href="#">
           <?php the_title(); ?>
         </a>
+        </div>
       </div>
       <div class="p-article__left__single__bottom">
         <?php if(have_posts()): 

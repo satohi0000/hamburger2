@@ -1169,7 +1169,7 @@ select {
   background-color: #3c2b1c;
   color: #fff;
   font-size: 1.8rem;
-  padding: 5px;
+  padding: 9px 7px 7px 7px;
 }
 
 .p-pagenation ul li a {
@@ -1376,43 +1376,50 @@ select {
 
 .p-article__left__single__top {
   width: 100%;
-  background-size: cover;
-  background-position: center;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .p-article__left__single__top > p {
   width: 100%;
 }
 
-.p-article__left__single__top > a {
-  color: white;
-  font-weight: bold;
-  line-height: auto;
-  font-size: 4rem;
-  position: absolute;
-}
-
-@media (max-width: 1200px) {
-  .p-article__left__single__top > a {
-    font-size: 3rem;
-  }
-}
-
 .p-article__left__single__top__img {
+  background-image: url("../pictures/topチーズバーガー.png");
   width: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .p-article__left__single__top__img p {
   width: 100%;
+}
+
+.p-article__left__single__top__word {
+  position: absolute;
+}
+
+.p-article__left__single__top__word > a {
+  color: white;
+  font-weight: bold;
+  line-height: 400px;
+  font-size: 4rem;
+  margin: 0 40px;
+}
+
+@media (max-width: 1200px) {
+  .p-article__left__single__top__word > a {
+    font-size: 3rem;
+  }
 }
 
 .p-article h2 {
