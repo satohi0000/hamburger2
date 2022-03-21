@@ -1387,8 +1387,9 @@ select {
 }
 
 .p-article__left__single__top__img {
+  aspect-ratio: 2/1;
   background-image: url("../pictures/topチーズバーガー.png");
-  width: 100%;
+  width: 200%;
   background-size: cover;
   background-position: center;
   -webkit-box-pack: center;
