@@ -4,6 +4,12 @@ $tab: 1200px;
     @content;
   }
 }
+$tab2: 900px;
+@mixin tab2 {
+  @media (max-width: ($tab2)) {
+    @content;
+  }
+}
 
 $sp: 599px;
 @mixin sp {

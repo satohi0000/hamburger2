@@ -526,7 +526,7 @@ select {
 }
 
 .l-footer__center {
-  padding-top: 30px;
+  padding-top: 10px;
   color: white;
   font-size: 1.2rem;
 }
@@ -570,7 +570,7 @@ select {
 .l-footer__copyright {
   color: white;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 .l-sidebar {
@@ -587,7 +587,7 @@ select {
     right: -100%;
     width: 48%;
     height: 100vh;
-    background-color: #F2EDE9;
+    background-color: #f2ede9;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
     padding: 0 0 0 0px;
@@ -612,7 +612,7 @@ select {
   /*枠の大きさ*/
   height: 50px;
   /*枠の大きさ*/
-  background: #F2EDE9;
+  background: #f2ede9;
   position: relative;
 }
 
@@ -652,7 +652,7 @@ select {
 
 .l-sidebar > a {
   display: block;
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 600;
   color: #707070;
   margin: 110px 30px;
@@ -665,20 +665,21 @@ select {
 }
 
 .l-sidebar ul {
-  margin: -30px 0px 0px 0px;
+  margin: -30px 0px 0px -20px;
 }
 
 @media (max-width: 1200px) {
   .l-sidebar ul {
     margin: 10px 0px 0px 10px;
+    padding: 0 0 0 0;
   }
 }
 
 .l-sidebar ul li {
   padding-bottom: 15px;
-  font-size: 30px;
+  font-size: 1rem;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 0px;
   list-style-type: none;
 }
 
@@ -691,7 +692,7 @@ select {
 .l-sidebar ul li > a {
   color: #707070;
   margin-left: 5%;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 1200px) {
@@ -714,7 +715,7 @@ select {
 }
 
 .l-sidebar ul li > ul > li {
-  margin: 10px 0px 0px 15px;
+  margin: 10px 0px 0px 30px;
 }
 
 @media (max-width: 1200px) {
@@ -724,7 +725,7 @@ select {
 }
 
 .l-sidebar ul li ul {
-  padding-top: 55px;
+  padding-top: 75px;
   padding-left: 0px;
 }
 
@@ -735,7 +736,7 @@ select {
 }
 
 .l-sidebar ul li ul li {
-  font-size: 20px;
+  font-size: 40px;
   padding-bottom: 30px;
   font-weight: normal;
 }
@@ -748,22 +749,6 @@ select {
   font-size: 3rem;
   color: white;
   font-family: Roboto;
-}
-
-@media (max-width: 1200px) {
-  .l-sidebar2 {
-    position: fixed;
-    overflow: scroll;
-    z-index: 999;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100vh;
-    background-color: #787878;
-  }
-  .l-sidebar2.__is-open {
-    left: 0;
-  }
 }
 
 .l-header {
@@ -1107,13 +1092,14 @@ select {
   position: absolute;
   z-index: 2;
   width: 65%;
-  height: 100%;
+  padding-bottom: auto;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 1200px) {
   .l-main__under__map__box {
     width: 80%;
+    height: auto;
   }
 }
 
@@ -1138,7 +1124,7 @@ select {
 
 .p-pagenation {
   width: 100%;
-  height: 200px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1553,7 +1539,7 @@ select {
   display: -ms-flexbox;
   display: flex;
   margin: 15px 0 0 0;
-  background: #3C2B1C;
+  background: #3c2b1c;
 }
 
 .p-menu-card_custom {
@@ -1598,21 +1584,19 @@ select {
 
 .p-menu-card__intro__right__h2 {
   color: white;
-  margin: 40px 20px;
+  margin: 20px 20px 10px 20px;
   font-size: 1.3rem;
 }
 
 .p-menu-card__intro__right__title {
-  text-align: center;
-  right: 50%;
   color: white;
   font-size: 2rem;
-  margin: 30px  0;
+  margin: 30px 0 0 20px;
 }
 
 @media (max-width: 599px) {
   .p-menu-card__intro__right__title {
-    font-size: 1.6rem;
+    right: 0%;
   }
 }
 
@@ -1631,18 +1615,38 @@ select {
 
 .p-menu-card__intro__right__permalink {
   background-color: white;
-  font-size: 1.0rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  padding: 10px;
-  margin: 40px auto;
+  padding: 2% 10%;
+  margin: 10% auto;
   border-radius: 40px;
-  line-height: 50px;
+  line-height: 40px;
   width: 50%;
   text-align: center;
 }
 
 .p-menu-card__intro__right__permalink > a {
   color: black;
+  padding: 15% 35%;
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .p-menu-card__intro__right__permalink > a {
+    padding: 15% 30%;
+  }
+}
+
+@media (max-width: 900px) {
+  .p-menu-card__intro__right__permalink > a {
+    padding: 10% 25%;
+  }
+}
+
+@media (max-width: 599px) {
+  .p-menu-card__intro__right__permalink > a {
+    padding: 15% 35%;
+  }
 }
 
 .c-category-title {
