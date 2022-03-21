@@ -1134,41 +1134,31 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: Robot;
 }
 
 .p-pagenation ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .p-pagenation ul li {
-  padding: 10px 8px;
-  font-size: 1.2rem;
-}
-
-@media (max-width: 1200px) {
-  .p-pagenation ul li {
-    font-size: 1rem;
-  }
+  padding: 10px 10px;
+  font-size: 1.3rem;
 }
 
 .p-pagenation ul li .dots {
-  padding: 10px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 .p-pagenation ul li .current {
   border: solid 3px #3c2b1c;
   background-color: #3c2b1c;
   color: #fff;
-  font-size: 2rem;
-}
-
-@media (max-width: 1200px) {
-  .p-pagenation ul li .current {
-    font-size: 1.8rem;
-  }
+  font-size: 1.8rem;
+  padding: 5px;
 }
 
 .p-pagenation ul li a {
@@ -1211,6 +1201,10 @@ select {
   }
 }
 
+.p-pagenation ul li a.next {
+  border: none;
+}
+
 @media (max-width: 599px) {
   .p-pagenation ul li a.next {
     display: block;
@@ -1250,6 +1244,14 @@ select {
   .p-pagenation ul li .current {
     display: none;
   }
+}
+
+.p-pagenation--pc ul, .p-pagenation--tab ul {
+  padding: 7px 30px;
+}
+
+.p-pagenation--pc ul li, .p-pagenation--tab ul li {
+  padding: 7px 15px;
 }
 
 @media (max-width: 599px) {
@@ -1538,7 +1540,7 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 15px 0 0 0;
+  margin: 30px 0 0 0;
   background: #3c2b1c;
 }
 
@@ -1605,6 +1607,7 @@ select {
   right: 0%;
   font-size: 1.2rem;
   margin: 20px;
+  line-height: 2rem;
 }
 
 @media (max-width: 1200px) {

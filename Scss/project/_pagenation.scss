@@ -4,26 +4,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Robot;
   ul {
     display: flex;
-    margin-top: 10px;
+    margin-top: 40px;
     li {
-      padding: 10px 8px;
-      font-size: 1.2rem;
-      @include tab {
-        font-size: 1rem;
-      }
+      padding: 10px 10px;
+      font-size: 1.3rem;
       .dots {
-        padding: 10px 0 0 0;
+        padding: 20px 0 0 0;
       }
       .current {
         border: solid 3px #3c2b1c;
         background-color: #3c2b1c;
         color: #fff;
-        font-size: 2rem;
-        @include tab {
-          font-size: 1.8rem;
-        }
+        font-size: 1.8rem;
+        padding: 5px;
       }
       a {
         display: block;
@@ -58,6 +54,7 @@
           }
         }
         &.next {
+          border: none;
           @include sp {
             //.nextのついた要素は表示し位置を指定
             display: block;
@@ -99,7 +96,9 @@
   &--pc,
   &--tab {
     ul {
+      padding: 7px 30px;
       li {
+        padding: 7px 15px;
         a {
           @include sp {
             display: none;
