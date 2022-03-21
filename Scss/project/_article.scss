@@ -117,10 +117,7 @@
   }
   //リスト部分
   ul {
-    padding: 33px 0;
-    width: 100%;
     font-size: 16px;
-    line-height: 1.6;
     @include sp {
       padding: 0 0 30px;
     }

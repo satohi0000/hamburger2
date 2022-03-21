@@ -9,6 +9,12 @@
         <p><?php single_cat_title(); ?></p> 
       </div>
     </div>
+    <div class="l-contents__left__category">
+    <h1><?php single_cat_title(); ?></h1>  
+    <?php if(category_description()):?>
+        <?php echo category_description($category_id); ?>
+        <?php endif;?>
+    </div>
     <?php
     if (have_posts()) :
     while (have_posts()) :
