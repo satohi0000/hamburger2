@@ -1166,7 +1166,6 @@ select {
 }
 
 .p-pagenation ul li .current {
-  border: solid 3px #3c2b1c;
   background-color: #3c2b1c;
   color: #fff;
   font-size: 1.8rem;
@@ -1211,6 +1210,10 @@ select {
   .p-pagenation ul li a.prev::after {
     display: block;
   }
+}
+
+.p-pagenation ul li a.prev {
+  border: none;
 }
 
 .p-pagenation ul li a.next {

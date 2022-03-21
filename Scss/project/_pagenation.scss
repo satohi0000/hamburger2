@@ -15,13 +15,12 @@
         padding: 20px 0 0 0;
       }
       .current {
-        border: solid 3px #3c2b1c;
         background-color: #3c2b1c;
         color: #fff;
         font-size: 1.8rem;
         padding: 5px;
       }
-      a {
+      & a {
         display: block;
         color: #3c2b1c;
         border: solid 1px #3c2b1c;
@@ -52,6 +51,9 @@
               display: block;
             }
           }
+        }
+        &.prev {
+          border: none;
         }
         &.next {
           border: none;
