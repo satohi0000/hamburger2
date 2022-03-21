@@ -32,6 +32,7 @@
           font-size: 1.3rem;
         }
         &.prev {
+          border: none;
           //.prevのついた要素は表示し位置を指定
           @include sp {
             display: block;
@@ -51,9 +52,6 @@
               display: block;
             }
           }
-        }
-        &.prev {
-          border: none;
         }
         &.next {
           border: none;

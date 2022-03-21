@@ -1188,6 +1188,10 @@ select {
   }
 }
 
+.p-pagenation ul li a.prev {
+  border: none;
+}
+
 @media (max-width: 599px) {
   .p-pagenation ul li a.prev {
     display: block;
@@ -1210,10 +1214,6 @@ select {
   .p-pagenation ul li a.prev::after {
     display: block;
   }
-}
-
-.p-pagenation ul li a.prev {
-  border: none;
 }
 
 .p-pagenation ul li a.next {
