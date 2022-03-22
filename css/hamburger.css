@@ -1088,6 +1088,7 @@ select {
   display: flex;
   position: relative;
   margin: 0 0 0px;
+  overflow: hidden;
 }
 
 .l-main__under__map__img {
@@ -1121,7 +1122,7 @@ select {
 }
 
 .l-main__under__map__box p {
-  max-width: 100%;
+  min-width: 65%;
   height: auto;
   color: white;
   margin-top: 50px;
