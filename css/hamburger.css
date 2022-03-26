@@ -1088,17 +1088,12 @@ select {
   display: flex;
   position: relative;
   margin: 0 0 0px;
-  overflow: hidden;
 }
 
 .l-main__under__map__img {
   width: 100%;
-}
-
-@media (max-width: 599px) {
-  .l-main__under__map {
-    height: 200%;
-  }
+  top: 0;
+  margin: 0%;
 }
 
 .l-main__under__map__box {
