@@ -1107,7 +1107,6 @@ select {
 @media (max-width: 1200px) {
   .l-main__under__map__box {
     width: 80%;
-    height: auto;
   }
 }
 

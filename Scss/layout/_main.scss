@@ -131,7 +131,6 @@
         background-color: rgba($color: black, $alpha: 0.5);
         @include tab {
           width: 80%;
-          height: auto;
         }
         .title {
           font-size: 2rem;
