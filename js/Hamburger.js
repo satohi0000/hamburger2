@@ -14,9 +14,10 @@ jQuery(".l-sidebar__batsu").click(function () {
   jQuery("body").css("overflow-y","auto");
 });
 
-$(function(){
+
 var height = jQuery(".l-main__under__map__box").outerWidth(true);
-var width = jQuery(".l-main__under__map__box").outerHeight(true);
-jQuery("l-main__under__map").css(width,"width");
-jQuery("l-main__under__map").css(height,"height");
-});
+console.log(height)
+jQuery("l-main__under__map__img").css("height",height);
+
+
+
