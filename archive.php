@@ -12,7 +12,7 @@
     <div class="l-contents__left__category">
     <h1><?php single_cat_title(); ?></h1>  
     <?php if(category_description()):?>
-        <?php echo category_description($category_id); ?>
+        <?php echo category_description(); ?>
         <?php endif;?>
     </div>
     <?php

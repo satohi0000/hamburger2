@@ -39,10 +39,10 @@ jQuery(function() {
 });
 
 var timer = false;
-  jQuery(window).resize(function() {
-      if (timer !== false) {
-          clearTimeout(timer);
-      }
-      timer = setTimeout(function() {
-      location.reload();
-      }, 10); });
+jQuery(window).resize(function() {
+  if (timer !== false) {
+    clearTimeout(timer);
+  }
+  timer = setTimeout(function() {
+    location.reload();
+  }, 10); });
