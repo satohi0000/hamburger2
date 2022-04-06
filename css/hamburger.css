@@ -1100,7 +1100,7 @@ select {
   position: absolute;
   z-index: 2;
   width: 65%;
-  height: 620px;
+  height: auto;
   padding-bottom: auto;
   background-color: rgba(0, 0, 0, 0.5);
 }

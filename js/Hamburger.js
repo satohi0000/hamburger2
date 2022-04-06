@@ -14,10 +14,19 @@ jQuery(".l-sidebar__batsu").click(function () {
   jQuery("body").css("overflow-y","auto");
 });
 
+const titleHeight = jQuery(".title").outerHeight(true);
+console.log(titleHeight);
 
-var height = jQuery(".l-main__under__map__box").outerWidth(true);
-console.log(height)
-jQuery("l-main__under__map__img").css("height",height);
+const lineHeight = jQuery(".line__side__under").outerHeight(true);
+console.log(lineHeight);
+
+const textHeight = jQuery(".maptext").outerHeight(true);
+console.log(textHeight)
 
 
+const sumHeight = titleHeight + lineHeight + textHeight + 47.5
+console.log(sumHeight)
 
+jQuery(".l-main__under__map__img").css('height', sumHeight);
+
+jQuery("l-main__under__map__box").css('height', sumHeight);

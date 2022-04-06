@@ -126,7 +126,7 @@
         position: absolute;
         z-index: 2;
         width: 65%;
-        height: 620px;
+        height: auto;
         padding-bottom: auto;
         background-color: rgba($color: black, $alpha: 0.5);
         @include tab {
