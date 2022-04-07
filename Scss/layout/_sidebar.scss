@@ -5,12 +5,19 @@
     z-index: 9999;
     top: 0;
     right: -100%;
-    width: 48%;
+    width: 100%;
     height: 100vh;
-    background-color: #f2ede9;
+    background: linear-gradient(
+      90deg,
+      #787878 0%,
+      #787878 70%,
+      #f2ede9 70%,
+      #f2ede9 100%
+    );
+
     transition: all 0.6s;
     padding: 0 0 0 0px;
-    margin: 0 0 0 0;
+    margin: 0 0 0 0px;
     @include sp {
     }
     &.__is-open {
@@ -23,7 +30,7 @@
     display: none;
     &.__is-open {
       display: block;
-      margin: 60px 0 0 auto;
+      margin: 60px 10px 0 auto;
       text-align: right;
       cursor: pointer;
       display: block;
@@ -68,7 +75,7 @@
     }
   }
   ul {
-    margin: -30px 0px 0px -20px;
+    margin: -30px 0px 0px -10px;
     @include tab {
       margin: 10px 0px 0px 10px;
       padding: 0 0 0 0;
@@ -84,10 +91,10 @@
       }
       > a {
         color: #707070;
-        margin-left: 5%;
+        margin-left: 0%;
         font-size: 1.3rem;
         @include tab {
-          margin-left: 10%;
+          margin-left: 75%;
         }
         @include sp {
           margin-left: 0%;
@@ -99,7 +106,7 @@
           margin: 30px 0px 0px 10px;
         }
         > li {
-          margin: 10px 0px 0px 30px;
+          margin: 10px 0px 0px 20px;
           @include tab {
             margin: 0px 0px 0px 0px;
           }
@@ -110,7 +117,7 @@
         @include tab {
           padding-top: 0px;
         }
-        padding-left: 0px;
+        padding-left: 10px;
 
         li {
           font-size: 40px;

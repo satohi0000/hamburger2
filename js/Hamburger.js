@@ -31,12 +31,7 @@ jQuery(".l-main__under__map__img").css('height', sumHeight);
 
 jQuery("l-main__under__map__box").css('height', sumHeight);
 
-jQuery(function() {
-  jQuery(window).on("load resize", function() {
-    jQuery(".l-main__under__map__img").css('height', sumHeight);
-    jQuery("l-main__under__map__box").css('height', sumHeight);
-  });
-});
+
 
 var timer = false;
 jQuery(window).resize(function() {

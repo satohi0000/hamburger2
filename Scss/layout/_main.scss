@@ -16,7 +16,6 @@
   }
   &__bottom {
     display: flex;
-
     margin: 0 0px 0 0;
     padding: 120px 60px;
     @include tab {
@@ -29,12 +28,12 @@
     }
     &__right {
       height: 1200px;
-      width: 550px;
+      width: 630px;
       background-image: url("../pictures/Eat in.png");
       background-size: cover;
       background-position: center;
       position: relative;
-      margin: 0px 0px 0 0;
+      margin: 0px 0px 0 30px;
       > a {
         color: white;
         > p {
@@ -44,7 +43,8 @@
       }
       p {
         font-weight: bold;
-        padding: 35px 5px 15px 15px;
+        padding: 15px 15px 15px 15px;
+        margin: 20px 0 0 0;
       }
       @include tab {
         height: 700px;
@@ -57,12 +57,12 @@
     }
     &__left {
       height: 1200px;
-      width: 550px;
+      width: 630px;
       background-image: url("../pictures/Take out.png");
       background-size: cover;
       background-position: center;
       position: relative;
-      margin: 0px 50px 0 0;
+      margin: 0px 60px 0 0px;
       > a {
         color: white;
         > p {
@@ -72,7 +72,8 @@
       }
       p {
         font-weight: bold;
-        padding: 35px 5px 15px 15px;
+        padding: 15px 15px 15px 15px;
+        margin: 20px 0 0 0;
       }
       @include tab {
         height: 700px;
@@ -142,7 +143,7 @@
           margin-top: 50px;
           line-height: 40px;
           line-height: 1.6rem;
-          margin: 60px 60px 0 60px;
+          margin: 60px;
         }
         &:hover {
           display: none;
