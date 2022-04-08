@@ -10,8 +10,8 @@
     background: linear-gradient(
       90deg,
       #787878 0%,
-      #787878 70%,
-      #f2ede9 70%,
+      #787878 57%,
+      #f2ede9 57%,
       #f2ede9 100%
     );
 
@@ -19,6 +19,13 @@
     padding: 0 0 0 0px;
     margin: 0 0 0 0px;
     @include sp {
+      background: linear-gradient(
+        90deg,
+        #787878 0%,
+        #787878 10%,
+        #f2ede9 10%,
+        #f2ede9 100%
+      );
     }
     &.__is-open {
       right: 0%;
@@ -94,7 +101,7 @@
         margin-left: 0%;
         font-size: 1.3rem;
         @include tab {
-          margin-left: 75%;
+          margin-left: 65%;
         }
         @include sp {
           margin-left: 0%;
@@ -129,6 +136,16 @@
         }
       }
     }
+  }
+}
+
+.menu-cateogrymenu-container {
+  @include tab {
+    margin-left: 0px;
+  }
+
+  @include sp {
+    margin-left: 70px;
   }
 }
 

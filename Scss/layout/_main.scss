@@ -49,10 +49,12 @@
       @include tab {
         height: 700px;
         width: 500px;
+        margin: 0px 0px 0 10px;
       }
       @include sp {
         width: 100%;
         margin-top: 20px;
+        margin-left: 0px;
       }
     }
     &__left {
@@ -78,6 +80,7 @@
       @include tab {
         height: 700px;
         width: 500px;
+        margin: 0px 15px 0px 0px;
       }
       @include sp {
         width: 100%;
