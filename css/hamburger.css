@@ -1122,7 +1122,7 @@ select {
 
 .l-main__bottom__box__1, .l-main__bottom__box__2 {
   padding: 10px 0 50px 0px;
-  margin: 10px 10px 0px 0px;
+  margin: 10px 10px 0px 10px;
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 0.8rem;
 }
