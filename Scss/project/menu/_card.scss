@@ -45,8 +45,8 @@
       }
       &__title {
         color: white;
-        font-size: 2rem;
-        margin: 30px 0 0 20px;
+        font-size: 1.8rem;
+        margin: 40px 0 40px 20px;
         @include sp {
           right: 0%;
         }
@@ -55,7 +55,7 @@
         color: white;
         right: 0%;
         font-size: 1.2rem;
-        margin: 20px;
+        margin: 10px 70px 10px 20px;
         line-height: 2rem;
         @include tab {
           font-size: 1.4rem;
@@ -65,18 +65,18 @@
         background-color: white;
         font-size: 1.1rem;
         font-weight: 700;
-        padding: 2% 10%;
+        padding: 10px 50px 10px 20px;
         margin: 10% auto;
         border-radius: 40px;
         line-height: 40px;
-        width: 50%;
+        width: 45%;
         text-align: center;
         > a {
           color: black;
           padding: 15% 35%;
           white-space: nowrap;
           @include tab {
-            padding: 15% 30%;
+            padding: 15% 38%;
           }
           @include tab2 {
             padding: 10% 25%;

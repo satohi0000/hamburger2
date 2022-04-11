@@ -48,8 +48,12 @@
     <?php get_sidebar(); ?>
   </div>
 
+
+
 <div class="p-pagenation">
-  <?php if( function_exists("the_pagination") ) the_pagination(); ?>
-</div>
+  <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
     
+</div>
+
+
 <?php get_footer(); ?>
