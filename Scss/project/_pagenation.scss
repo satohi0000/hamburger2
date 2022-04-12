@@ -2,11 +2,14 @@
   font-size: 1.2rem;
   margin: 15px;
 }
-.page{
-  border: solid 1px;
+.wp-pagenavi{
+  >a{
+    border: solid 1px;
   font-size: 1.5rem;
   padding: 7px 9px 7px 9px;
   margin: 5px;
+  }
+  
 }
 
 .current {

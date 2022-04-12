@@ -171,10 +171,19 @@
 .wp-block-button__link{
   color: #3C2A10;
   border: 2px #707070;
-  background-color: #F2EDE9;
+  background: -moz-linear-gradient(top, #F2EDE9, #E1DBD6);
+  background: -webkit-linear-gradient(top, #F2EDE9, #E1DBD6);
+  background: linear-gradient(to bottom, #F2EDE9, #E1DBD6);
   font-family:M+ 1m;
-  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 400px;
   height: 75px;
   text-align: center;
   padding:30px;
+  border-radius: 20px;
+}
+
+.post-5{
+  margin: 0 20px 0 20px;
 }
