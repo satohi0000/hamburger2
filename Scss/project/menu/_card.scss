@@ -65,24 +65,25 @@
         background-color: white;
         font-size: 1.1rem;
         font-weight: 700;
-        padding: 10px 50px 10px 20px;
+        padding: 10px 20px 10px 20px;
         margin: 10% auto;
         border-radius: 40px;
         line-height: 40px;
         width: 45%;
         text-align: center;
+        @include tab{
+          padding: 10px 20px 10px 20px;
+        }
         > a {
-          color: black;
+          color: #707070;
           padding: 15% 35%;
           white-space: nowrap;
           @include tab {
-            padding: 15% 38%;
+            padding: 15%;
           }
-          @include tab2 {
-            padding: 10% 25%;
-          }
+          
           @include sp {
-            padding: 15% 35%;
+            padding: 0 0 0 0;
           }
         }
       }

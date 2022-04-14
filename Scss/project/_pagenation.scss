@@ -1,13 +1,22 @@
 .pages{
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   margin: 15px;
+  font-family: Roboto;
+  color: #707070;
+  @include sp{
+    display: none;
+  }
+  
 }
 .wp-pagenavi{
   >a{
-    border: solid 1px;
   font-size: 1.5rem;
   padding: 7px 9px 7px 9px;
   margin: 5px;
+  border: solid 1px;
+  @include sp{
+    display: none;
+  }
   }
   
 }
@@ -18,12 +27,73 @@
   font-size: 1.5rem;
   padding: 7px 9px 7px 9px;
   margin: 5px;
+  @include sp{
+    display: none;
+  }
 }
 
 .nextpostslink,.previouspostslink{
-  font-size: 2.4rem;
+  font-size: 2.0rem !important;
   padding: 7px 7px 7px 7px;
   color: #707070;
+  border: none !important;
+}
+
+.previouspostslink{
+  @include sp {
+    display: none;
+    border: none;
+    font-size: 1.3rem;
+  }
+  border: none;
+//.prevのついた要素は表示し位置を指定
+@include sp {
+  display: block !important;
+  position: absolute;
+  left: 0;
+}
+&::after {
+  //「前へ」部分のスタイル。基本は非表示だけどスマホの時だけ見せる
+  width: 70px;
+  content: "前へ";
+  display: none;
+  position: absolute;
+  left: 30px;
+  top: 12px;
+  padding-left: 3px;
+  @include sp {
+    display:  block !important;
+  }
+}
+}
+
+.nextpostslink{
+  border: none;
+  @include sp {
+    display: none;
+    border: none;
+    font-size: 1.3rem;
+  }
+  @include sp {
+    //.nextのついた要素は表示し位置を指定
+    display:  block !important;
+    position: absolute;
+    right: 0;
+  }
+  &::before {
+    //「次へ」部分のスタイル。基本は非表示だけどスマホの時だけ見せる
+    width: 70px;
+    text-align: right;
+    content: "次へ";
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 12px;
+    padding-right: 3px;
+    @include sp {
+      display:  block !important;
+    }
+  }
 }
 
 .p-pagenation {

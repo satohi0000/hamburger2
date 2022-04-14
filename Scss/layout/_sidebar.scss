@@ -12,6 +12,7 @@
     padding: 0 0 0 0px;
     margin: 0 0 0 0;
     @include sp {
+      width: 80%
     }
     &.__is-open {
       right: 0%;
