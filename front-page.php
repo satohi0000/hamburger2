@@ -21,7 +21,7 @@
               </div>
             </div>
             <div class="l-main__bottom__right">
-              <a href="#"><p class="title">Eat in</p></a>
+              <a href="#"><p class="title">Eat In</p></a>
               <hr class="line__side"></p>
               <div class="l-main__bottom__box">
                 <div class="l-main__bottom__box__1">

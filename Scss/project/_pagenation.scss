@@ -11,9 +11,10 @@
 .wp-pagenavi{
   >a{
   font-size: 1.5rem;
-  padding: 7px 9px 7px 9px;
+  padding: 2px 9px 2px 9px;
   margin: 5px;
   border: solid 1px;
+  font-family: Roboto;
   @include sp{
     display: none;
   }
@@ -25,16 +26,17 @@
   background-color: #3c2b1c;
   color: #fff;
   font-size: 1.5rem;
-  padding: 7px 9px 7px 9px;
+  padding: 2px 9px 2px 9px;
   margin: 5px;
+  font-family: Roboto;
   @include sp{
     display: none;
   }
 }
 
 .nextpostslink,.previouspostslink{
-  font-size: 2.0rem !important;
-  padding: 7px 7px 7px 7px;
+  font-size: 1.2rem !important;
+  padding: 7px 7px 7px 7px!important;
   color: #707070;
   border: none !important;
 }
