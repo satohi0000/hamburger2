@@ -1600,6 +1600,12 @@ select {
   margin: 0 0 0 60px;
 }
 
+@media (max-width: 599px) {
+  .p-article__left__page__top > a {
+    margin: 0 auto;
+  }
+}
+
 .p-article__left__single__top {
   width: 100%;
   height: 400px;
