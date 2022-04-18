@@ -1023,14 +1023,26 @@ select {
 @media (max-width: 1200px) {
   .fa-search {
     top: 9px;
-    margin-right: 46%;
+    margin-right: 45%;
+  }
+}
+
+@media (max-width: 900px) {
+  .fa-search {
+    margin-right: 49%;
+  }
+}
+
+@media (max-width: 700px) {
+  .fa-search {
+    margin-right: 54%;
   }
 }
 
 @media (max-width: 599px) {
   .fa-search {
     top: 12px;
-    margin-right: 85%;
+    margin-right: 84%;
   }
 }
 

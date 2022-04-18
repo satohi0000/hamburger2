@@ -123,11 +123,17 @@
   z-index: 999;
   @include tab {
     top:9px;
-    margin-right: 46%;
+    margin-right: 45%;
+  }
+  @include tab2 {
+    margin-right: 49%;
+  }
+  @include tab3 {
+    margin-right: 54%;
   }
   @include sp {
     top:12px;
-    margin-right: 85%;
+    margin-right: 84%;
   }
 }
 

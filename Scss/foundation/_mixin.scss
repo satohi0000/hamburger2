@@ -11,6 +11,13 @@ $tab2: 900px;
   }
 }
 
+$tab3: 700px;
+@mixin tab3 {
+  @media (max-width: ($tab3)) {
+    @content;
+  }
+}
+
 $sp: 599px;
 @mixin sp {
   @media (max-width: ($sp)) {
