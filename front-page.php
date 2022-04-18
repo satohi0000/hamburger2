@@ -26,11 +26,11 @@
               <div class="l-main__bottom__box">
                 <div class="l-main__bottom__box__1">
                   <h2>Eat in</h2>
-                  <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+                  <p>当店のイートインで利用できる商品を掲載しています</p>
                 </div>
                 <div class="l-main__bottom__box__2">
                   <h2>Eat in</h2>
-                  <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+                  <p>当店のイートインで利用できる商品を掲載しています</p>
                 </div>
               </div>
             </div>

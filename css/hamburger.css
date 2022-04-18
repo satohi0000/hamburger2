@@ -421,6 +421,7 @@ select {
   display: flex;
   position: relative;
   height: 200px;
+  font-family: Robot;
 }
 
 .l-contents__left__archive__top__bg {
@@ -537,6 +538,10 @@ select {
   .l-contents__right {
     width: 0%;
   }
+}
+
+.wp-block-media-text__content {
+  padding: 0 0 0 15px !important;
 }
 
 .l-footer {
@@ -1182,7 +1187,7 @@ select {
 .l-main__bottom__box__1, .l-main__bottom__box__2 {
   padding: 10px 0 50px 0px;
   margin: 10px 10px 0px 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   font-size: 0.8rem;
 }
 
@@ -1266,6 +1271,7 @@ select {
   margin: 5px;
   border: solid 1px;
   font-family: Roboto;
+  color: #707070;
 }
 
 @media (max-width: 599px) {
@@ -1744,7 +1750,7 @@ select {
 }
 
 .p-article figure {
-  padding: 15px 0px;
+  padding: 15px 10px;
 }
 
 .p-article figure table {
