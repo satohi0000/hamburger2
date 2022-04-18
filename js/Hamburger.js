@@ -18,9 +18,9 @@ const TitleHeight = jQuery(".title").outerHeight(true);
 
 const LineHeight = jQuery(".line__side__under").outerHeight(true);
 
-const TextHeight = jQuery(".maptext").outerHeight(true);
+const TextHeight = jQuery(".maptext").outerHeight(true) 
 
-const MapHeight = TitleHeight + LineHeight + TextHeight + 47.5
+const MapHeight = TitleHeight + LineHeight + TextHeight
 
 jQuery(".l-main__under__map__img").css('height', MapHeight);
 
