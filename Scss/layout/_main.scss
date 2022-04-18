@@ -91,12 +91,14 @@
       font-weight: bold;
       position: absolute;
       bottom: 30px;
-      margin: 10px;
+      margin: 0px 10px -15px 7px;
       width: 95%;
       color: #3c2a10;
-      &__1,
-      &__2 {
-        padding: 10px 0 50px 0px;
+      &__1__left,
+      &__2__left,
+      &__1__right,
+      &__2__right{
+        padding: 10px 0 10px 0px;
         margin: 10px 10px 0px 10px;
         background-color: rgba($color: white, $alpha: 0.8);
         font-size: 0.8rem;

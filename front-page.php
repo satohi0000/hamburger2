@@ -7,30 +7,30 @@
       </div>
           <div class="l-main__bottom">
             <div class="l-main__bottom__left">
-              <a href="#"><p class="title">Take Out</p></a>
+              <a href="#"><p class="boxtitle">Take Out</p></a>
               <hr class="line__side"></p>
               <div class="l-main__bottom__box">
-                <div class="l-main__bottom__box__1">
+                <div class="l-main__bottom__box__1__left">
                   <h2>Take out</h2>
-                  <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+                  <p class ="l-main__bottom__box__1__left__p">当店のテイクアウトで利用できる商品を掲載しています</p>
                 </div>
-                <div class="l-main__bottom__box__2">
+                <div class="l-main__bottom__box__2__left">
                   <h2>Take out</h2>
-                  <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+                  <p class ="l-main__bottom__box__2__left__p">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
                 </div>
               </div>
             </div>
             <div class="l-main__bottom__right">
-              <a href="#"><p class="title">Eat In</p></a>
+              <a href="#"><p class="boxtitle">Eat In</p></a>
               <hr class="line__side"></p>
               <div class="l-main__bottom__box">
-                <div class="l-main__bottom__box__1">
+                <div class="l-main__bottom__box__1__right">
                   <h2>Eat in</h2>
-                  <p>当店のイートインで利用できる商品を掲載しています</p>
+                  <p class="l-main__bottom__box__1__right__p">当店のイートインで利用できる商品を掲載しています</p>
                 </div>
-                <div class="l-main__bottom__box__2">
+                <div class="l-main__bottom__box__2__right">
                   <h2>Eat in</h2>
-                  <p>当店のイートインで利用できる商品を掲載しています</p>
+                  <p class="l-main__bottom__box__2__right__p">当店のイートインで利用できる商品を掲載しています</p>
                 </div>
               </div>
             </div>

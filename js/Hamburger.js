@@ -14,22 +14,83 @@ jQuery(".l-sidebar__batsu").click(function () {
   jQuery("body").css("overflow-y","auto");
 });
 
-const titleHeight = jQuery(".title").outerHeight(true);
-console.log(titleHeight);
+const TitleHeight = jQuery(".title").outerHeight(true);
 
-const lineHeight = jQuery(".line__side__under").outerHeight(true);
-console.log(lineHeight);
+const LineHeight = jQuery(".line__side__under").outerHeight(true);
 
-const textHeight = jQuery(".maptext").outerHeight(true);
-console.log(textHeight)
+const TextHeight = jQuery(".maptext").outerHeight(true);
+
+const MapHeight = TitleHeight + LineHeight + TextHeight + 47.5
+
+jQuery(".l-main__under__map__img").css('height', MapHeight);
+
+jQuery("l-main__under__map__box").css('height', MapHeight);
 
 
-const sumHeight = titleHeight + lineHeight + textHeight + 47.5
-console.log(sumHeight)
 
-jQuery(".l-main__under__map__img").css('height', sumHeight);
 
-jQuery("l-main__under__map__box").css('height', sumHeight);
+const Boxp1Height = jQuery(".l-main__bottom__box__1__left__p").outerHeight(true);
+console.log(Boxp1Height)
+
+const BoxtitleHeight = jQuery(".l-main__bottom__box h2").outerHeight(true);
+console.log(BoxtitleHeight)
+
+const Box1Height = Boxp1Height + BoxtitleHeight 
+console.log(Box1Height)
+
+jQuery(".l-main__bottom__box__1__left").css('height', Box1Height);
+
+
+const Boxp2Height = jQuery(".l-main__bottom__box__2__left__p").outerHeight(true);
+console.log(Boxp2Height)
+
+const Box2Height = Boxp2Height + BoxtitleHeight
+console.log(Box2Height)
+
+jQuery(".l-main__bottom__box__2__left").css('height', Box2Height);
+
+const img_lineHeight = jQuery(".line__side").outerHeight(true);
+console.log(img_lineHeight)
+
+const img_titleHeight = jQuery(".boxtitle").outerHeight(true);
+console.log(img_titleHeight)
+
+const bottom_left_imgHeight = Box2Height + Box1Height + img_lineHeight + img_titleHeight + 300
+
+
+
+jQuery(".l-main__bottom__left").css('height',bottom_left_imgHeight);
+
+const rBoxp1Height = jQuery(".l-main__bottom__box__1__right__p").outerHeight(true);
+console.log(Boxp1Height)
+
+
+const rBox1Height = Boxp1Height + BoxtitleHeight 
+
+
+jQuery(".l-main__bottom__box__1__right").css('height', rBox1Height);
+
+
+const rBoxp2Height = jQuery(".l-main__bottom__box__2__right__p").outerHeight(true);
+console.log(rBoxp2Height)
+
+const rBox2Height = rBoxp2Height + BoxtitleHeight
+
+
+jQuery(".l-main__bottom__box__2__right").css('height', rBox2Height);
+
+
+const bottom_right_imgHeight = rBox2Height + rBox1Height + img_lineHeight + img_titleHeight + 300
+
+if(bottom_right_imgHeight > bottom_left_imgHeight){
+  jQuery(".l-main__bottom__right").css('height',bottom_right_imgHeight);
+}else{
+  jQuery(".l-main__bottom__right").css('height',bottom_left_imgHeight);
+}
+
+
+
+
 
 
 

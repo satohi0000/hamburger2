@@ -1,6 +1,5 @@
 .pages{
-  font-size: 1.0rem;
-  margin: 15px;
+  font-size: 1.3rem;
   font-family: Roboto;
   color: #707070;
   @include sp{
@@ -36,10 +35,10 @@
 }
 
 .nextpostslink,.previouspostslink{
-  font-size: 1.2rem !important;
-  padding: 7px 7px 7px 7px!important;
+  font-size: 2.4rem;
+  padding: 7px 7px 7px 7px;
   color: #707070;
-  border: none !important;
+  border: none!important;
 }
 
 .previouspostslink{
@@ -61,7 +60,8 @@
   content: "前へ";
   display: none;
   position: absolute;
-  left: 30px;
+  left: 50px;
+  margin: -10px 10px 0 10px;
   top: 12px;
   padding-left: 3px;
   @include sp {
@@ -90,7 +90,8 @@
     content: "次へ";
     display: none;
     position: absolute;
-    right: 30px;
+    right: 50px;
+	  margin:-10px 10px 0 10px;
     top: 12px;
     padding-right: 3px;
     @include sp {
@@ -188,62 +189,3 @@
   }
 }
 
-.p-pagenation {
-  &--pc,
-  &--tab {
-    ul {
-      padding: 7px 30px;
-      li {
-        padding: 7px 15px;
-        a {
-          @include sp {
-            display: none;
-          }
-          &.prev {
-            //.prevのついた要素は表示し位置を指定
-            @include sp {
-              display: block;
-              position: absolute;
-              left: 0;
-            }
-            &::after {
-              //「前へ」部分のスタイル。基本は非表示だけどスマホの時だけ見せる
-              width: 70px;
-              content: "前へ";
-              display: none;
-              position: absolute;
-              left: 30px;
-              top: 12px;
-              padding-left: 3px;
-              @include sp {
-                display: block;
-              }
-            }
-          }
-          &.next {
-            @include sp {
-              //.nextのついた要素は表示し位置を指定
-              display: block;
-              position: absolute;
-              right: 0;
-            }
-            &::before {
-              //「次へ」部分のスタイル。基本は非表示だけどスマホの時だけ見せる
-              width: 70px;
-              text-align: right;
-              content: "次へ";
-              display: none;
-              position: absolute;
-              right: 30px;
-              top: 12px;
-              padding-right: 3px;
-              @include sp {
-                display: block;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}

@@ -748,7 +748,7 @@ select {
 
 @media (max-width: 1200px) {
   .l-sidebar ul li > ul {
-    margin: 15px 0px 0px 10px;
+    margin: 15px 0px 0px 5px;
   }
 }
 
@@ -862,14 +862,8 @@ select {
 }
 
 .l-header__left h1 {
-  margin: 0 0 0 50px;
+  margin: 0 0 0 40px;
   font-weight: bold;
-}
-
-@media (max-width: 1200px) {
-  .l-header__left h1 {
-    margin: 0px;
-  }
 }
 
 .l-header__left a {
@@ -877,12 +871,6 @@ select {
   color: #707070;
   font-family: roboto;
   font-size: 3rem;
-}
-
-@media (max-width: 599px) {
-  .l-header__left a {
-    margin-left: 60px;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -963,7 +951,7 @@ select {
 
 @media (max-width: 1200px) {
   .l-header__form__box {
-    width: 35%;
+    width: 45%;
   }
 }
 
@@ -1023,27 +1011,31 @@ select {
 @media (max-width: 1200px) {
   .fa-search {
     top: 9px;
-    margin-right: 45%;
+    margin-right: 55%;
   }
 }
 
 @media (max-width: 900px) {
   .fa-search {
-    margin-right: 49%;
+    margin-right: 59%;
   }
 }
 
 @media (max-width: 700px) {
   .fa-search {
-    margin-right: 54%;
+    margin-right: 64%;
   }
 }
 
 @media (max-width: 599px) {
   .fa-search {
     top: 12px;
-    margin-right: 84%;
+    margin-right: 83%;
   }
+}
+
+.fa-search ::before {
+  margin: 0 0 0 2px;
 }
 
 .line__side {
@@ -1191,20 +1183,20 @@ select {
   font-weight: bold;
   position: absolute;
   bottom: 30px;
-  margin: 10px;
+  margin: 0px 10px -15px 7px;
   width: 95%;
   color: #3c2a10;
 }
 
-.l-main__bottom__box__1, .l-main__bottom__box__2 {
-  padding: 10px 0 50px 0px;
+.l-main__bottom__box__1__left, .l-main__bottom__box__2__left, .l-main__bottom__box__1__right, .l-main__bottom__box__2__right {
+  padding: 10px 0 10px 0px;
   margin: 10px 10px 0px 10px;
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 0.8rem;
 }
 
 @media (max-width: 1200px) {
-  .l-main__bottom__box__1, .l-main__bottom__box__2 {
+  .l-main__bottom__box__1__left, .l-main__bottom__box__2__left, .l-main__bottom__box__1__right, .l-main__bottom__box__2__right {
     height: 80px;
     top: 100px;
   }
@@ -1265,8 +1257,7 @@ select {
 }
 
 .pages {
-  font-size: 1.0rem;
-  margin: 15px;
+  font-size: 1.3rem;
   font-family: Roboto;
   color: #707070;
 }
@@ -1308,8 +1299,8 @@ select {
 }
 
 .nextpostslink, .previouspostslink {
-  font-size: 1.2rem !important;
-  padding: 7px 7px 7px 7px !important;
+  font-size: 2.4rem;
+  padding: 7px 7px 7px 7px;
   color: #707070;
   border: none !important;
 }
@@ -1339,7 +1330,8 @@ select {
   content: "前へ";
   display: none;
   position: absolute;
-  left: 30px;
+  left: 50px;
+  margin: -10px 10px 0 10px;
   top: 12px;
   padding-left: 3px;
 }
@@ -1376,7 +1368,8 @@ select {
   content: "次へ";
   display: none;
   position: absolute;
-  right: 30px;
+  right: 50px;
+  margin: -10px 10px 0 10px;
   top: 12px;
   padding-right: 3px;
 }
@@ -1504,69 +1497,6 @@ select {
 @media (max-width: 599px) {
   .p-pagenation ul li .current {
     display: none;
-  }
-}
-
-.p-pagenation--pc ul, .p-pagenation--tab ul {
-  padding: 7px 30px;
-}
-
-.p-pagenation--pc ul li, .p-pagenation--tab ul li {
-  padding: 7px 15px;
-}
-
-@media (max-width: 599px) {
-  .p-pagenation--pc ul li a, .p-pagenation--tab ul li a {
-    display: none;
-  }
-}
-
-@media (max-width: 599px) {
-  .p-pagenation--pc ul li a.prev, .p-pagenation--tab ul li a.prev {
-    display: block;
-    position: absolute;
-    left: 0;
-  }
-}
-
-.p-pagenation--pc ul li a.prev::after, .p-pagenation--tab ul li a.prev::after {
-  width: 70px;
-  content: "前へ";
-  display: none;
-  position: absolute;
-  left: 30px;
-  top: 12px;
-  padding-left: 3px;
-}
-
-@media (max-width: 599px) {
-  .p-pagenation--pc ul li a.prev::after, .p-pagenation--tab ul li a.prev::after {
-    display: block;
-  }
-}
-
-@media (max-width: 599px) {
-  .p-pagenation--pc ul li a.next, .p-pagenation--tab ul li a.next {
-    display: block;
-    position: absolute;
-    right: 0;
-  }
-}
-
-.p-pagenation--pc ul li a.next::before, .p-pagenation--tab ul li a.next::before {
-  width: 70px;
-  text-align: right;
-  content: "次へ";
-  display: none;
-  position: absolute;
-  right: 30px;
-  top: 12px;
-  padding-right: 3px;
-}
-
-@media (max-width: 599px) {
-  .p-pagenation--pc ul li a.next::before, .p-pagenation--tab ul li a.next::before {
-    display: block;
   }
 }
 
@@ -2004,7 +1934,7 @@ select {
 
 @media (max-width: 1200px) {
   .p-menu-card__intro__right__permalink > a {
-    padding: 15%;
+    padding: 0 0 0 0;
   }
 }
 
