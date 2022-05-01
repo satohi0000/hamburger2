@@ -101,4 +101,4 @@ jQuery(window).resize(function() {
   }
   timer = setTimeout(function() {
     location.reload();
-  }, 10); });
+  }, 100); });
