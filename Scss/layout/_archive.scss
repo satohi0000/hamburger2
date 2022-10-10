@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .l-archive{
     &__top{
         display: flex;
@@ -13,5 +14,18 @@
             background-size: cover;
             background-position: center;
         } 
+=======
+.l-archive {
+  &__top {
+    display: flex;
+    position: relative;
+    &__img {
+      height: 500px;
+      width: auto;
+      background-image: url("../pictures/hamburger_set.png");
+      background-size: cover;
+      background-position: center;
+>>>>>>> d204f0fa427998e4e6031f15cb15802a5ba6f4ab
     }
+  }
 }

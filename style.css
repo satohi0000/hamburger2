@@ -9,12 +9,22 @@ Author: hiroki //開発者のネーム(任意)
 Theme Name: Hamburger 
 Description: ハンバーガーサイト 
 Version: 1.0.0 
-Theme URI: https://example.com //サイトのURL(任意)
+Theme URI: https://example.com //サイトのURL
 Author: sato 
+<<<<<<< HEAD
 >>>>>>> 0c649cc0cb4961ecfc7d0d514f0f9bae2f2d27f9
 Author URI: https://example-author.com //開発者のURL(任意)
 Tags: right-sidebar, blog //テーマの絞り混みで使うタグ(任意)
 License: GNU General Public License v3.0 //ライセンス(任意)
 License URI: http://www.gnu.org/licenses/gpl-3.0.html //ライセンスのURL(任意)
 Text Domain: hamburger //テーマディレクトリと同じ名前を入れる(任意)
+=======
+Tags: right-sidebar, blog 
+License: GNU General Public License v3.0 
+License URI: http://www.gnu.org/licenses/gpl-3.0.html 
+Text Domain: hamburger
+Author URI: 
+Tested up to: 5.９　
+Requires PHP: 7.4.1
+>>>>>>> d204f0fa427998e4e6031f15cb15802a5ba6f4ab
 */

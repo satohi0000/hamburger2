@@ -1,108 +1,154 @@
-@import "../foundation/mixin";
+.l-header {
+  width: 100%;
+  height: 200px;
+  background-color: #fff7ef;
+  display: flex;
+  align-items: center;
 
-.l-header{
-    width: 100%;
-    height: 200px;
-    background-color: #FFF7EF;
+  &__left {
+    width: 80%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    &__left{
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        h1{
-            margin: 0 0 0 50px;
-        }
-        a{
-            color: #707070;
-            font-size: 3.0rem;
-        }
-        @include tab{
-            width: 100%;
-            display: flex;
-            text-align: center;
-            flex-direction: column;
-        }
-        &__menu{
-            &__botton{
-                font-size: 1.5rem;
-                margin: 10px -75px 160px ; 
-                cursor: pointer;
-                display: none;
-                z-index: 999;
-                color: #707070;
-                font-weight: bold;
-                @include tab{
-                    display: flex;
-                }
-                @include sp{
-                   left:25px;
-                }    
-            }
-        }
+    h1 {
+      margin: 0 0 0 40px;
+      font-weight: bold;
     }
-    &__form{
-        margin: 20px 0 0 50px;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        right: 10px;
-        &__box{
-           padding: 0 0 0 25px;
-           width: 300px;
-           height: 2rem;
-           border-radius: 0.6rem; 
-           border: solid 1px #707070;
-           font-size: 1.6rem;
-           font-weight: 500;
-        }
-        &__botton{
-            margin: 0 0 0 10px;
-            width: 5rem;
-            height: 2rem;
-            background-color: #F2EDE9;
-            border-radius: 0.6rem;
-            border: solid 1px #707070;
-            color: #707070;
-            cursor: pointer;
-        }
+    a {
+      display: block;
+      color: #707070;
+      font-family: roboto;
+      font-size: 3rem;
     }
-    &__right{
-        width: 20%;
-        height: 200px;
-        background-color: #F2EDE9;
-        @include tab{
-            position: fixed;
-            left: 100%;
-        }
-        &__is-open{
-            z-index: 10; 
-            left: 70%; 
-            width: 30%; 
-        }
-
+    @include tab {
+      margin: auto;
+      width: 100%;
+      display: block;
+      text-align: center;
+      flex-direction: column;
     }
-}
-
-.fa-search{
-    top: 8px;
-    margin-right: 360px;
-    position: absolute;
-    z-index: 999;
+    &__menu {
+      &__botton {
+        font-size: 1.5rem;
+        margin: 10px 0px 160px;
+        cursor: pointer;
+        display: none;
+        z-index: 999;
+        color: #707070;
+        font-weight: bold;
+        @include tab {
+          margin-right: 20px;
+          font-size: 2rem;
+          display: flex;
+          writing-mode: horizontal-tb;
+        }
+        @include sp {
+          left: 25px;
+        }
+      }
+    }
+  }
+  &__form {
+    margin: 20px 0px 0 350px;
     @include tab{
-        margin-right: 350px;
+      margin: 35px 0px 0 35px;
     }
+    @include sp{
+      margin: 35px 0px 0 35px;
+    }
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    &__box {
+      padding: 0 0 0 40px;
+      height: 2.3rem;
+      border-radius: 0.4rem;
+      border: solid 1px #707070;
+      font-size: 1rem;
+      font-weight: 500;
+      width: 100%;
+      @include tab{
+        width: 45%;
+      }
+      @include sp {
+        width: 70%;
+        height: 2.8rem;
+      }
+    }
+    &__botton {
+      margin: 0 20px 0 10px;
+      font-size: 0.8rem;
+      width: 7rem;
+      @include sp{
+        width: 4rem;
+      }
+
+      background: -moz-linear-gradient(top, #F2EDE9, #ded8d3);
+  background: -webkit-linear-gradient(top, #F2EDE9, #ded8d3);
+  background: linear-gradient(to bottom, #F2EDE9, #ded8d3);
+      border-radius: 0.7rem;
+      border: solid 1px #707070;
+      color: #707070;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+  &__right {
+    width: 20%;
+    height: 200px;
+    background-color: #f2ede9;
+    @include tab {
+      position: fixed;
+      left: 100%;
+    }
+    &__is-open {
+      z-index: 10;
+      left: 70%;
+      width: 30%;
+    }
+  }
 }
 
-.line{
-    &__side{
-      border-top:4px solid white;
-      width: 90px;
-      margin-left: 20px;
-    }&__border{
-      border-top:2px solid white;
-      width: 20px;
-      transform:rotate(90deg); 
+.fa-search {
+  top: 9px;
+  font-size: 22px;
+  margin: 0px 90% 0px 0px;
+  position: absolute;
+  z-index: 999;
+  @include tab {
+    top:9px;
+    margin-right: 55%;
+  }
+  @include tab2 {
+    margin-right: 59%;
+  }
+  @include tab3 {
+    margin-right: 64%;
+  }
+  @include sp {
+    top:12px;
+    margin-right: 83%;
+  }
+  ::before{
+    margin: 0 0 0 2px;
+  }
+}
+
+.line {
+  &__side {
+    border-top: 4px solid white;
+    width: 80px;
+    margin: 20px;
+    &__under {
+      border-top: 4px solid white;
+      width: 80px;
+      margin: 20px;
+      margin: 0 0 0 70px;
     }
+  }
+  &__border {
+    border-top: 2px solid white;
+    width: 20px;
+    transform: rotate(90deg);
+  }
 }

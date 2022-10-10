@@ -2,22 +2,21 @@
   <div class="p-article">
     <article class="p-article__left">
       <div class="p-article__left__page__top">
-        <div class="p-article__left__page__top__word">
-          <h1><?php the_title(); ?></h1>
-        </div>
+        <a href="#">
+          <?php the_title(); ?>
+        </a>
       </div>
-      <div class="p-article__left__page__top__img"></div>
-      <?php if(have_posts()): 
-      while(have_posts()):
-      the_post(); ?>
-      <div id="post-<?php the_ID(); ?>"
-       <?php post_class(); ?>
-       <?php the_content(); ?>>
+      <div class="p-article__left__page__bottom">
+        <?php if(have_posts()): 
+        while(have_posts()):
+        the_post();?>
       </div>
-      <?php endwhile;else: ?>
-        <p>表示する記事がありません</p>
-      <?php endif; ?>   
-  </article>
+      <div id="post-<?php the_ID(); ?>"<?php post_class(); ?><?php the_content(); ?>
+        <?php endwhile;else: ?>
+          <p>表示する記事がありません</p>
+        <?php endif; ?>
+      </div>
+    </article>
   <?php get_sidebar(); ?> 
 </div>
-  <?php get_footer(); ?>
+<?php get_footer(); ?>
