@@ -38,7 +38,7 @@
             p{
                 font-weight: bold;
                 line-height: 30px;
-                padding: 25px 15px 15px 15px;
+                padding: 25px 5px 15px 5px;
             }
             @include sp{
                 width: 100%;
@@ -59,7 +59,7 @@
             p{
                 font-weight: bold;
                 line-height: 30px;
-                padding: 25px 5px 15px 15px;
+                padding: 25px 5px 15px 5px;
             }
            
             @include sp{
@@ -77,7 +77,7 @@
                 padding: 10px 0 80px 0px;
                 margin: 30px 0px 0px 0px;
                 background-color:rgba($color:white, $alpha: 0.5);
-                font-size: 1.3rem;
+                font-size: 1.0rem;
             }
             h2{
                 margin-top: 15px;

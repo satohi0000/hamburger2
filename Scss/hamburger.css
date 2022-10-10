@@ -97,7 +97,11 @@ input, select {
 .l-archive__top__img {
   height: 500px;
   width: auto;
+<<<<<<< HEAD
   background-image: url("../hamburger/pictures/マスクグループ.png");
+=======
+  background-image: url("../pictures/マスクグループ.png");
+>>>>>>> 0c649cc0cb4961ecfc7d0d514f0f9bae2f2d27f9
   background-size: cover;
   background-position: center;
 }
@@ -559,7 +563,11 @@ input, select {
 
 .l-sidebar__batsu.__is-open {
   display: block;
+<<<<<<< HEAD
   margin: 10px 0 0 auto;
+=======
+  margin: 60px 0 0 auto;
+>>>>>>> 0c649cc0cb4961ecfc7d0d514f0f9bae2f2d27f9
   text-align: right;
   cursor: pointer;
   display: block;

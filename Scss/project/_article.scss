@@ -1,0 +1,142 @@
+.p-article{
+    width: 100%;
+    display: flex;
+    font-weight: normal;
+    color: #3C2A10;
+    @include tab{
+        padding: 70px 60px;
+    }
+    @include sp{
+        padding: 35px 22px;
+    }
+    &__left{
+        width: 80%;
+        &__page{
+            &__top{
+                &__img{
+                    background-image: url("../pictures/cooked-foods-750073.png"); 
+                    object-fit: cover;
+                    object-position: center;  
+                    height: 400px; 
+                }
+                &__word{
+                  font-size: 42px;  
+                }
+            }
+        }
+        &__single{
+            &__top{
+                &__img{
+                    background-image: url("../../pictures/cooked-foods-750073.png");
+                    object-fit: cover;
+                    object-position: center;  
+                    height: 100px;
+                }
+                &__word{
+                    font-size: 42px;
+                }
+            }
+        }
+    }
+
+//見出しや文字
+    h2{
+        padding: 33px 0;
+        font-size: 36px;
+    }
+    h3{
+        padding: 33px 0;
+        font-size: 28px;
+    }
+    h4{
+        padding: 33px 0;
+        font-size: 20px;
+    }
+    h5{
+        padding: 33px 0;
+        font-size: 12px;
+    }
+    h6{
+        padding: 33px 0;
+        font-size: 4px;
+    }
+    p{
+        padding: 33px 0;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+//引用ボックス部分
+    blockquote{
+        padding: 33px 0;
+        background-color: #F5F5F5;
+        padding-left: 50px;
+        padding-right: 50px;
+        line-height: 1.6;
+        @include sp{
+            padding-top: 30px;
+        }
+    }
+    blockquote>p{
+        padding: 0 0 33px;
+    }
+//番号付きリスト部分    
+    ol{
+        padding: 33px 0;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        @include sp{
+            padding: 0 20px 30px;
+        }
+        >li{
+            list-style: decimal;
+            >ol{
+                padding: 30px 20px;
+            }
+        }
+    }
+//リスト部分 
+    ul{
+        padding: 33px 0;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        @include sp{
+            padding: 0 0 30px;
+        }
+        >li{
+            >ul{
+                padding: 30px 20px;
+            }
+        }
+    }
+//整形テキスト（ソースコード部分）
+    pre{
+        padding: 33px 0;
+        width: 100%;
+        background-color: #F5F5F5;
+        padding: 50px;
+        code{
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    }
+//表部分
+    figure{
+        padding: 33px 0;
+        table{
+            padding: 60px 0;
+            font-size: 16px;
+            width: 100%;
+            tr{
+                padding: 30px;
+                th,td{
+                    padding: 30px;
+                    font-weight: 500;
+                    border: solid 1px;
+                    text-align: inherit;
+                }
+            }    
+        }
+    }
+}
